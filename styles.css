@@ -289,6 +289,7 @@ body {
     justify-content: center;
     color: #00d4ff;
     transition: all 0.3s ease;
+    position: relative;
 }
 
 .image-placeholder:hover {
@@ -311,6 +312,9 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 13px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 /* Featured Section */
@@ -357,6 +361,9 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 13px;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .featured-item h3 {
