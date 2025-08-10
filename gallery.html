@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Astronomy Adventures</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-telescope"></i>
+                <span>Astronomy Adventures</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="gallery.html" class="nav-link active">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="experiences.html" class="nav-link">Experiences</a>
+                </li>
+                <li class="nav-item">
+                    <a href="observatory.html" class="nav-link">Observatory</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <section class="gallery-hero">
+            <div class="container">
+                <h1 class="gallery-title">Astrophotography Gallery</h1>
+                <p class="gallery-subtitle">Explore the cosmos through my lens</p>
+            </div>
+        </section>
+
+        <section class="gallery-section">
+            <div class="container">
+                <div class="category-nav">
+                    <button class="category-btn active" data-category="all">
+                        <i class="fas fa-globe"></i>
+                        All Images
+                    </button>
+                    <button class="category-btn" data-category="galaxies">
+                        <i class="fas fa-star"></i>
+                        Galaxies
+                    </button>
+                    <button class="category-btn" data-category="nebulae">
+                        <i class="fas fa-cloud"></i>
+                        Nebulae
+                    </button>
+                    <button class="category-btn" data-category="planets">
+                        <i class="fas fa-globe"></i>
+                        Planets
+                    </button>
+                    <button class="category-btn" data-category="stars">
+                        <i class="fas fa-star"></i>
+                        Star Clusters
+                    </button>
+                    <button class="category-btn" data-category="events">
+                        <i class="fas fa-meteor"></i>
+                        Events
+                    </button>
+                </div>
+
+                <div class="gallery-grid" id="galleryGrid">
+                    <!-- Gallery items will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <span class="close-lightbox" id="closeLightbox">&times;</span>
+            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightboxTitle"></h3>
+                <p id="lightboxDescription"></p>
+                <div class="lightbox-meta">
+                    <span id="lightboxDate"></span>
+                    <span id="lightboxEquipment"></span>
+                </div>
+            </div>
+            <button class="lightbox-nav prev" id="prevBtn">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="lightbox-nav next" id="nextBtn">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Astronomy Adventures</h3>
+                    <p>Exploring the universe one image at a time</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Connect</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p><i class="fas fa-envelope"></i> contact@astronomyadventures.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Your Location</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Astronomy Adventures. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="gallery.js"></script>
+</body>
+</html>

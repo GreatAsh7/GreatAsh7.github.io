@@ -1,0 +1,356 @@
+/* Observatory Hero Section */
+.observatory-hero {
+    padding: 8rem 0 4rem;
+    text-align: center;
+    background: radial-gradient(circle at center, rgba(0, 212, 255, 0.1) 0%, transparent 70%);
+}
+
+.observatory-title {
+    font-family: 'Orbitron', monospace;
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    background: linear-gradient(45deg, #00d4ff, #ff6b6b, #4ecdc4);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 3s ease infinite;
+}
+
+.observatory-subtitle {
+    font-size: 1.3rem;
+    color: #b0b0b0;
+    margin-bottom: 2rem;
+}
+
+/* Observatory Overview */
+.observatory-overview {
+    padding: 5rem 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.overview-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.overview-text h2 {
+    font-family: 'Orbitron', monospace;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #00d4ff;
+}
+
+.overview-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0;
+    line-height: 1.7;
+}
+
+.observatory-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.observatory-stats .stat {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(0, 212, 255, 0.1);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+}
+
+.observatory-stats .stat-number {
+    display: block;
+    font-family: 'Orbitron', monospace;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00d4ff;
+}
+
+.observatory-stats .stat-label {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+}
+
+.overview-image {
+    display: flex;
+    justify-content: center;
+}
+
+.overview-image .image-placeholder {
+    width: 350px;
+    height: 350px;
+}
+
+/* Equipment Section */
+.equipment-section {
+    padding: 5rem 0;
+}
+
+.equipment-section h2 {
+    font-family: 'Orbitron', monospace;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #00d4ff;
+}
+
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.equipment-card {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    padding: 2rem;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.equipment-card:hover {
+    border-color: #00d4ff;
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.equipment-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(45deg, rgba(0, 212, 255, 0.2), rgba(255, 107, 107, 0.2));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.equipment-icon i {
+    font-size: 2rem;
+    color: #00d4ff;
+}
+
+.equipment-card h3 {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #00d4ff;
+}
+
+.equipment-card h4 {
+    font-size: 1rem;
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.equipment-card p {
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.equipment-specs {
+    list-style: none;
+    padding: 0;
+}
+
+.equipment-specs li {
+    color: #b0b0b0;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+    font-size: 0.9rem;
+}
+
+.equipment-specs li:last-child {
+    border-bottom: none;
+}
+
+.equipment-specs strong {
+    color: #00d4ff;
+}
+
+/* Software Section */
+.software-section {
+    padding: 5rem 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.software-section h2 {
+    font-family: 'Orbitron', monospace;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #00d4ff;
+}
+
+.software-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.software-item {
+    text-align: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    border: 1px solid rgba(0, 212, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.software-item:hover {
+    border-color: #00d4ff;
+    transform: translateY(-3px);
+}
+
+.software-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, rgba(0, 212, 255, 0.2), rgba(255, 107, 107, 0.2));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.software-icon i {
+    font-size: 1.5rem;
+    color: #00d4ff;
+}
+
+.software-item h3 {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #00d4ff;
+}
+
+.software-item p {
+    color: #b0b0b0;
+    line-height: 1.6;
+}
+
+/* Observatory Gallery */
+.observatory-gallery {
+    padding: 5rem 0;
+}
+
+.observatory-gallery h2 {
+    font-family: 'Orbitron', monospace;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #00d4ff;
+}
+
+.observatory-gallery .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.observatory-gallery .gallery-item {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 1.5rem;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.observatory-gallery .gallery-item:hover {
+    border-color: #00d4ff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+}
+
+.observatory-gallery .image-placeholder {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 1rem;
+}
+
+.observatory-gallery .gallery-item h3 {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #00d4ff;
+}
+
+.observatory-gallery .gallery-item p {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .observatory-title {
+        font-size: 2.5rem;
+    }
+    
+    .overview-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .observatory-stats {
+        grid-template-columns: 1fr;
+    }
+    
+    .equipment-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .software-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .observatory-gallery .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .overview-text h2,
+    .equipment-section h2,
+    .software-section h2,
+    .observatory-gallery h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .observatory-title {
+        font-size: 2rem;
+    }
+    
+    .observatory-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .overview-text h2,
+    .equipment-section h2,
+    .software-section h2,
+    .observatory-gallery h2 {
+        font-size: 1.8rem;
+    }
+    
+    .equipment-card,
+    .software-item,
+    .observatory-gallery .gallery-item {
+        padding: 1.5rem;
+    }
+    
+    .overview-image .image-placeholder {
+        width: 280px;
+        height: 280px;
+    }
+}
