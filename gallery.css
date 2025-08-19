@@ -384,3 +384,124 @@
         font-size: 1.3rem;
     }
 }
+
+
+/* Video and Media Support Styles */
+
+/* Gallery thumbnail styles */
+.gallery-thumbnail {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: none;
+    background: none;
+}
+
+/* Media type indicator */
+.media-type-indicator {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 212, 255, 0.5);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00d4ff;
+    font-size: 0.9rem;
+    z-index: 10;
+}
+
+.media-type-indicator.video {
+    color: #ff6b6b;
+    border-color: rgba(255, 107, 107, 0.5);
+}
+
+/* Gallery item overlay enhancements */
+.gallery-item-overlay .media-label {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 212, 255, 0.9);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Gallery item meta enhancements */
+.gallery-item-type {
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.gallery-item-type.image {
+    background: rgba(0, 212, 255, 0.2);
+    color: #00d4ff;
+}
+
+.gallery-item-type.video {
+    background: rgba(255, 107, 107, 0.2);
+    color: #ff6b6b;
+}
+
+/* Lightbox media container */
+.lightbox-media-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lightbox video styles */
+.lightbox-video {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    display: block;
+    background: #000;
+}
+
+/* Update lightbox image styles for consistency */
+.lightbox-image {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: contain;
+    display: block;
+}
+
+/* Video controls styling */
+.lightbox-video::-webkit-media-controls-panel {
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.lightbox-video::-webkit-media-controls-play-button,
+.lightbox-video::-webkit-media-controls-volume-slider,
+.lightbox-video::-webkit-media-controls-timeline {
+    color: #00d4ff;
+}
+
+/* Responsive video styles */
+@media (max-width: 768px) {
+    .lightbox-video {
+        max-height: 60vh;
+    }
+    
+    .media-type-indicator {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    
+    .gallery-item-overlay .media-label {
+        font-size: 0.7rem;
+        padding: 3px 6px;
+    }
+}
