@@ -1,11 +1,13 @@
-// Gallery Data - Replace with your actual images
+// Gallery Data - Replace with your actual images and videos
 const galleryData = [
     {
         id: 1,
         title: "Andromeda Galaxy",
         description: "The closest spiral galaxy to our Milky Way, captured in stunning detail.",
         category: "galaxies",
-        image: "path/to/andromeda.jpg",
+        type: "image",
+        src: "path/to/andromeda.jpg",
+        thumbnail: "path/to/andromeda_thumb.jpg",
         date: "December 2024",
         equipment: "16\" Newtonian, ZWO ASI2600MM Pro"
     },
@@ -14,7 +16,9 @@ const galleryData = [
         title: "Orion Nebula",
         description: "A stellar nursery where new stars are being born.",
         category: "nebulae",
-        image: "path/to/orion.jpg",
+        type: "image",
+        src: "path/to/orion.jpg",
+        thumbnail: "path/to/orion_thumb.jpg",
         date: "November 2024",
         equipment: "16\" Newtonian, Ha/OIII/SII filters"
     },
@@ -23,7 +27,9 @@ const galleryData = [
         title: "Saturn with Rings",
         description: "The ringed planet showing its magnificent ring system.",
         category: "planets",
-        image: "path/to/saturn.jpg",
+        type: "image",
+        src: "path/to/saturn.jpg",
+        thumbnail: "path/to/saturn_thumb.jpg",
         date: "October 2024",
         equipment: "16\" Newtonian, ZWO ASI174MM Mini"
     },
@@ -32,16 +38,20 @@ const galleryData = [
         title: "Pleiades Star Cluster",
         description: "The Seven Sisters, a beautiful open star cluster.",
         category: "stars",
-        image: "path/to/pleiades.jpg",
+        type: "image",
+        src: "path/to/pleiades.jpg",
+        thumbnail: "path/to/pleiades_thumb.jpg",
         date: "September 2024",
         equipment: "16\" Newtonian, LRGB filters"
     },
     {
         id: 5,
-        title: "Geminid Meteor Shower",
-        description: "Captured during the peak of the annual meteor shower.",
+        title: "Geminid Meteor Shower Timelapse",
+        description: "A mesmerizing timelapse captured during the peak of the annual meteor shower.",
         category: "events",
-        image: "path/to/geminids.jpg",
+        type: "video",
+        src: "path/to/geminids.mp4",
+        thumbnail: "path/to/geminids_thumb.jpg",
         date: "December 2024",
         equipment: "Wide-field camera, 24mm lens"
     },
@@ -50,7 +60,9 @@ const galleryData = [
         title: "Whirlpool Galaxy",
         description: "A stunning example of interacting galaxies.",
         category: "galaxies",
-        image: "path/to/whirlpool.jpg",
+        type: "image",
+        src: "path/to/whirlpool.jpg",
+        thumbnail: "path/to/whirlpool_thumb.jpg",
         date: "November 2024",
         equipment: "16\" Newtonian, LRGB filters"
     },
@@ -59,18 +71,44 @@ const galleryData = [
         title: "Eagle Nebula",
         description: "Home to the famous Pillars of Creation.",
         category: "nebulae",
-        image: "path/to/eagle.jpg",
+        type: "image",
+        src: "path/to/eagle.jpg",
+        thumbnail: "path/to/eagle_thumb.jpg",
         date: "October 2024",
         equipment: "16\" Newtonian, Ha/OIII/SII filters"
     },
     {
         id: 8,
-        title: "Jupiter with Moons",
-        description: "The gas giant with its four Galilean moons visible.",
+        title: "Jupiter Rotation Timelapse",
+        description: "A fascinating timelapse showing Jupiter's rotation with its four Galilean moons.",
         category: "planets",
-        image: "path/to/jupiter.jpg",
+        type: "video",
+        src: "path/to/jupiter_rotation.mp4",
+        thumbnail: "path/to/jupiter_thumb.jpg",
         date: "September 2024",
         equipment: "16\" Newtonian, ZWO ASI174MM Mini"
+    },
+    {
+        id: 9,
+        title: "Moon Surface Detail",
+        description: "High-resolution capture of lunar craters and surface features.",
+        category: "planets",
+        type: "image",
+        src: "path/to/moon_detail.jpg",
+        thumbnail: "path/to/moon_detail_thumb.jpg",
+        date: "August 2024",
+        equipment: "16\" Newtonian, ZWO ASI174MM Mini"
+    },
+    {
+        id: 10,
+        title: "Star Trail Sequence",
+        description: "Beautiful star trails captured over several hours showing Earth's rotation.",
+        category: "events",
+        type: "video",
+        src: "path/to/star_trails.mp4",
+        thumbnail: "path/to/star_trails_thumb.jpg",
+        date: "July 2024",
+        equipment: "DSLR, 14mm wide-angle lens"
     }
 ];
 
@@ -112,14 +150,22 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         galleryGrid.innerHTML = images.map((item, index) => `
-            <div class="gallery-item" data-index="${index}" data-category="${item.category}">
+            <div class="gallery-item" data-index="${index}" data-category="${item.category}" data-type="${item.type}">
                 <div class="gallery-item-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-image"></i>
-                        <p>${item.title}</p>
-                    </div>
+                    ${item.thumbnail ? `
+                        <img src="${item.thumbnail}" alt="${item.title}" class="gallery-thumbnail" />
+                        <div class="media-type-indicator ${item.type}">
+                            <i class="fas ${item.type === 'video' ? 'fa-play' : 'fa-image'}"></i>
+                        </div>
+                    ` : `
+                        <div class="image-placeholder">
+                            <i class="fas ${item.type === 'video' ? 'fa-video' : 'fa-image'}"></i>
+                            <p>${item.title}</p>
+                        </div>
+                    `}
                     <div class="gallery-item-overlay">
                         <i class="fas fa-expand"></i>
+                        ${item.type === 'video' ? '<span class="media-label">Video</span>' : '<span class="media-label">Image</span>'}
                     </div>
                 </div>
                 <div class="gallery-item-info">
@@ -128,6 +174,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="gallery-item-meta">
                         <span>${item.date}</span>
                         <span class="gallery-item-category">${getCategoryName(item.category)}</span>
+                        <span class="gallery-item-type ${item.type}">${item.type === 'video' ? 'Video' : 'Image'}</span>
                     </div>
                 </div>
             </div>
@@ -180,14 +227,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Open lightbox
     function openLightbox(index) {
-        const image = filteredImages[index];
+        const item = filteredImages[index];
         currentImageIndex = index;
 
-        lightboxImage.src = image.image || '';
-        lightboxTitle.textContent = image.title;
-        lightboxDescription.textContent = image.description;
-        lightboxDate.textContent = image.date;
-        lightboxEquipment.textContent = image.equipment;
+        // Clear previous content
+        const lightboxMediaContainer = document.getElementById('lightboxMediaContainer');
+        lightboxMediaContainer.innerHTML = '';
+
+        // Create appropriate media element
+        if (item.type === 'video') {
+            const videoElement = document.createElement('video');
+            videoElement.src = item.src || '';
+            videoElement.className = 'lightbox-video';
+            videoElement.controls = true;
+            videoElement.autoplay = false;
+            videoElement.preload = 'metadata';
+            lightboxMediaContainer.appendChild(videoElement);
+        } else {
+            const imageElement = document.createElement('img');
+            imageElement.src = item.src || '';
+            imageElement.className = 'lightbox-image';
+            imageElement.alt = item.title;
+            lightboxMediaContainer.appendChild(imageElement);
+        }
+
+        lightboxTitle.textContent = item.title;
+        lightboxDescription.textContent = item.description;
+        lightboxDate.textContent = item.date;
+        lightboxEquipment.textContent = item.equipment;
 
         lightbox.classList.add('active');
         document.body.style.overflow = 'hidden';
@@ -269,24 +336,53 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 1000);
 });
 
-// Utility function to add new images to the gallery
-function addImageToGallery(imageData) {
-    galleryData.push({
+// Utility function to add new media (images or videos) to the gallery
+function addMediaToGallery(mediaData) {
+    // Ensure required fields are present
+    const newMedia = {
         id: galleryData.length + 1,
-        ...imageData
-    });
+        type: mediaData.type || 'image', // default to image if not specified
+        ...mediaData
+    };
     
-    if (currentCategory === 'all' || imageData.category === currentCategory) {
+    galleryData.push(newMedia);
+    
+    // Update filtered images if the new media matches current category
+    if (currentCategory === 'all' || mediaData.category === currentCategory) {
+        if (currentCategory === 'all') {
+            filteredImages = galleryData;
+        } else {
+            filteredImages = galleryData.filter(item => item.category === currentCategory);
+        }
         renderGallery(filteredImages);
     }
 }
 
-// Example usage:
-// addImageToGallery({
-//     title: "New Image",
+// Backward compatibility - alias for the old function name
+function addImageToGallery(imageData) {
+    addMediaToGallery({ ...imageData, type: 'image' });
+}
+
+// Example usage for images:
+// addMediaToGallery({
+//     title: "New Galaxy Image",
 //     description: "Description of the new image",
 //     category: "galaxies",
-//     image: "path/to/new-image.jpg",
+//     type: "image",
+//     src: "path/to/new-image.jpg",
+//     thumbnail: "path/to/new-image_thumb.jpg",
 //     date: "January 2025",
 //     equipment: "16\" Newtonian, ZWO ASI2600MM Pro"
+// });
+
+// Example usage for videos:
+// addMediaToGallery({
+//     title: "Mars Rotation Timelapse",
+//     description: "Fascinating timelapse showing Mars rotation",
+//     category: "planets",
+//     type: "video",
+//     src: "path/to/mars-rotation.mp4",
+//     thumbnail: "path/to/mars-rotation_thumb.jpg",
+//     date: "January 2025",
+//     equipment: "16\" Newtonian, ZWO ASI174MM Mini"
 // });
