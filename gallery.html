@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Astronomy Adventures</title>
+    <title>Gallery - Ashtronomy</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="gallery.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
         <div class="nav-container">
             <div class="nav-logo">
                 <i class="fas fa-telescope"></i>
-                <span>Astronomy Adventures</span>
+                <span>Ashtronomy</span>
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -44,7 +44,7 @@
     <main class="main-content">
         <section class="gallery-hero">
             <div class="container">
-                <h1 class="gallery-title">Astrophotography Gallery</h1>
+                <h1 class="gallery-title">"Ash"trophotography Gallery</h1>
                 <p class="gallery-subtitle">Explore the cosmos through my lens</p>
             </div>
         </section>
@@ -52,29 +52,45 @@
         <section class="gallery-section">
             <div class="container">
                 <div class="category-nav">
-                    <button class="category-btn active" data-category="all">
-                        <i class="fas fa-globe"></i>
-                        All Images
+                    <button class="category-nav-arrow left" id="categoryLeftArrow">
+                        <i class="fas fa-chevron-left"></i>
                     </button>
-                    <button class="category-btn" data-category="galaxies">
-                        <i class="fas fa-star"></i>
-                        Galaxies
-                    </button>
-                    <button class="category-btn" data-category="nebulae">
-                        <i class="fas fa-cloud"></i>
-                        Nebulae
-                    </button>
-                    <button class="category-btn" data-category="planets">
-                        <i class="fas fa-globe"></i>
-                        Planets
-                    </button>
-                    <button class="category-btn" data-category="stars">
-                        <i class="fas fa-star"></i>
-                        Star Clusters
-                    </button>
-                    <button class="category-btn" data-category="events">
-                        <i class="fas fa-meteor"></i>
-                        Events
+                    <div class="category-nav-container" id="categoryContainer">
+                        <button class="category-btn active" data-category="all">
+                            <i class="fas fa-globe"></i>
+                            All Images
+                        </button>
+                        <button class="category-btn" data-category="dsos">
+                            <i class="fas fa-star"></i>
+                            DSOs
+                        </button>
+                        <button class="category-btn" data-category="eclipse">
+                            <i class="fas fa-circle-half-stroke"></i>
+                            Eclipse
+                        </button>
+                        <button class="category-btn" data-category="misc">
+                            <i class="fas fa-asterisk"></i>
+                            Misc
+                        </button>
+                        <button class="category-btn" data-category="moon">
+                            <i class="fas fa-moon"></i>
+                            Moon
+                        </button>
+                        <button class="category-btn" data-category="plane">
+                            <i class="fas fa-plane"></i>
+                            Plane
+                        </button>
+                        <button class="category-btn" data-category="planets">
+                            <i class="fas fa-globe"></i>
+                            Planets
+                        </button>
+                        <button class="category-btn" data-category="stars">
+                            <i class="fas fa-star-of-david"></i>
+                            Stars
+                        </button>
+                    </div>
+                    <button class="category-nav-arrow right" id="categoryRightArrow">
+                        <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>
 
@@ -89,7 +105,9 @@
     <div class="lightbox" id="lightbox">
         <div class="lightbox-content">
             <span class="close-lightbox" id="closeLightbox">&times;</span>
-            <img class="lightbox-image" id="lightboxImage" src="" alt="">
+            <div class="lightbox-media" id="lightboxImage">
+                <!-- Media content (image or video) will be inserted here -->
+            </div>
             <div class="lightbox-info">
                 <h3 id="lightboxTitle"></h3>
                 <p id="lightboxDescription"></p>
@@ -111,8 +129,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Astronomy Adventures</h3>
-                    <p>Exploring the universe one image at a time</p>
+                    <h3>Ashtronomy</h3>
+                    <p>Exploring the sky one image at a time</p>
                 </div>
                 <div class="footer-section">
                     <h3>Connect</h3>
@@ -125,12 +143,12 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact</h3>
-                    <p><i class="fas fa-envelope"></i> contact@astronomyadventures.com</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Your Location</p>
+                    <p><i class="fas fa-envelope"></i> ashwinkrishk@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Edison, New Jersey</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Astronomy Adventures. All rights reserved.</p>
+                <p>2025 Ashtronomy. All rights reserved.</p>
             </div>
         </div>
     </footer>

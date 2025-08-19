@@ -12,6 +12,7 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
+    transition: none;
 }
 
 /* Animated Background */
@@ -339,7 +340,7 @@ body {
 .featured-item {
     background: rgba(0, 0, 0, 0.3);
     border-radius: 15px;
-    padding: 2rem;
+    padding: 1.5rem;
     border: 1px solid rgba(0, 212, 255, 0.2);
     transition: all 0.3s ease;
 }
