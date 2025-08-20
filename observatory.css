@@ -23,6 +23,78 @@
     margin-bottom: 2rem;
 }
 
+/* My Role Section */
+.my-role-section {
+    padding: 5rem 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.role-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.role-text h2 {
+    font-family: 'Orbitron', monospace;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #00d4ff;
+}
+
+.role-text p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #e0e0e0;
+    line-height: 1.7;
+}
+
+.role-highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.role-highlights .highlight {
+    text-align: center;
+    padding: 1.5rem;
+    background: rgba(255, 107, 107, 0.1);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 107, 107, 0.2);
+    transition: all 0.3s ease;
+}
+
+.role-highlights .highlight:hover {
+    border-color: #ff6b6b;
+    box-shadow: 0 10px 30px rgba(255, 107, 107, 0.2);
+    transform: translateY(-3px);
+}
+
+.role-highlights .highlight i {
+    font-size: 2rem;
+    color: #ff6b6b;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.role-highlights .highlight span {
+    font-size: 0.9rem;
+    color: #e0e0e0;
+    font-weight: 500;
+}
+
+.role-image {
+    display: flex;
+    justify-content: center;
+}
+
+.role-image .image-placeholder {
+    width: 350px;
+    height: 350px;
+}
+
 /* Observatory Overview */
 .observatory-overview {
     padding: 5rem 0;
@@ -298,9 +370,14 @@
         font-size: 2.5rem;
     }
     
+    .role-content,
     .overview-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+    
+    .role-highlights {
+        grid-template-columns: 1fr;
     }
     
     .observatory-stats {
@@ -319,6 +396,7 @@
         grid-template-columns: 1fr;
     }
     
+    .role-text h2,
     .overview-text h2,
     .equipment-section h2,
     .software-section h2,
