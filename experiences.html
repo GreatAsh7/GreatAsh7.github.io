@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Experiences - Ashtronomy</title>
+    <title>Ashtronomy - Astrophotography Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="experiences.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -21,13 +20,13 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="index.html" class="nav-link active">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="gallery.html" class="nav-link">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a href="experiences.html" class="nav-link active">Experiences</a>
+                    <a href="experiences.html" class="nav-link">Experiences</a>
                 </li>
                 <li class="nav-item">
                     <a href="observatory.html" class="nav-link">Observatory</a>
@@ -42,176 +41,73 @@
     </nav>
 
     <main class="main-content">
-        <section class="experiences-hero">
-            <div class="container">
-                <h1 class="experiences-title">Astronomy Experiences</h1>
-                <p class="experiences-subtitle">Stories from under the stars</p>
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to the Cosmos</h1>
+                <p class="hero-subtitle">Exploring the universe through the lens of ashtrophotography</p>
+                <div class="hero-buttons">
+                    <a href="gallery.html" class="btn btn-primary">View Gallery</a>
+                    <a href="experiences.html" class="btn btn-secondary">Read Stories</a>
+                </div>
             </div>
         </section>
 
-        <section class="experiences-section">
+        <section class="about-section">
             <div class="container">
-                <div class="experiences-grid">
-                    <article class="experience-card">
-                        <div class="experience-image">
-                            <div class="image-placeholder">
-                                <i class="fas fa-meteor"></i>
-                                <p>Event Image</p>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>About Me</h2>
+                        <p>Welcome to my cosmic corner of the internet! I'm Ashwin, a passionate astrophotographer dedicated to capturing the beauty of our universe. Through long nights under the stars, I've learned to translate the wonders of space into images that tell stories of our solar system, DSOs, and other celestial events.</p>
+                        <p>My journey in astronomy began with a simple telescope (Orion Starblast II 4.5) and has evolved into a deep exploration of both the technical and artistic aspects of astrophotography. Join me as I share my experiences and move forward in my astronomical journey!</p>
+                        <div class="stats">
+                            <div class="stat">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Images Taken</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">∞</span>
+                                <span class="stat-label">Passion</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Hours Under Stars</span>
                             </div>
                         </div>
-                        <div class="experience-content">
-                            <div class="experience-meta">
-                                <span class="experience-date">December 15, 2024</span>
-                                <span class="experience-category">Meteor Shower</span>
-                            </div>
-                            <h2 class="experience-title">Gemini Meteor Shower 2024</h2>
-                            <p class="experience-excerpt">
-                                The night sky came alive with the annual Geminid meteor shower, one of the most reliable and spectacular meteor showers of the year. From my observatory, I witnessed hundreds of meteors streaking across the dark sky, creating a celestial fireworks display that lasted for hours.
-                            </p>
-                            <div class="experience-details">
-                                <div class="detail-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>Peak Rate: 120 meteors/hour</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Location: My Observatory</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-users"></i>
-                                    <span>Guests: 15 astronomy enthusiasts</span>
-                                </div>
-                            </div>
-                            <button class="read-more-btn" onclick="toggleExperience(this)">
-                                Read More
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
-                            <div class="experience-full-text" style="display: none;">
-                                <p>
-                                    The evening began with a clear sky and perfect viewing conditions. As darkness fell, I set up multiple cameras to capture both wide-field shots of the entire sky and close-up images of individual meteors. The Geminids are unique because they originate from an asteroid (3200 Phaethon) rather than a comet, making them particularly bright and colorful.
-                                </p>
-                                <p>
-                                    Around 2 AM, the shower reached its peak activity. Meteors were appearing every few seconds, some leaving persistent trails that lingered in the sky for several seconds. The most spectacular moment came when a brilliant fireball streaked across the sky, lighting up the entire landscape for a brief moment.
-                                </p>
-                                <p>
-                                    I was joined by a group of local astronomy enthusiasts who had heard about the event through my social media posts. We spent the night sharing stories, taking photos, and marveling at the cosmic display above us. It was a perfect reminder of why I love sharing astronomy with others.
-                                </p>
-                                <div class="experience-gallery">
-                                    <h3>Photos from the Event</h3>
-                                    <div class="mini-gallery">
-                                        <div class="mini-image">
-                                            <i class="fas fa-image"></i>
-                                            <p>Meteor Trail 1</p>
-                                        </div>
-                                        <div class="mini-image">
-                                            <i class="fas fa-image"></i>
-                                            <p>Meteor Trail 2</p>
-                                        </div>
-                                        <div class="mini-image">
-                                            <i class="fas fa-image"></i>
-                                            <p>Group Photo</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <img src="Astro/Intro/ashwin.jpeg" alt="Ashwin">
                         </div>
-                    </article>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <article class="experience-card">
-                        <div class="experience-image">
-                            <div class="image-placeholder">
-                                <i class="fas fa-sun"></i>
-                                <p>Event Image</p>
-                            </div>
+        <section class="featured-section">
+            <div class="container">
+                <h2>Featured Images</h2>
+                <div class="featured-grid">
+                    <div class="featured-item">
+                        <div class="image-placeholder">
+                            <img src="Astro/Intro/moon.jpg" alt="Moon">
                         </div>
-                        <div class="experience-content">
-                            <div class="experience-meta">
-                                <span class="experience-date">October 14, 2024</span>
-                                <span class="experience-category">Solar Eclipse</span>
-                            </div>
-                            <h2 class="experience-title">Annular Solar Eclipse Expedition</h2>
-                            <p class="experience-excerpt">
-                                Traveled to the path of totality for the annular solar eclipse, where the moon covered 90% of the sun, creating a spectacular "ring of fire" effect. This rare celestial event drew crowds from around the world to witness this astronomical phenomenon.
-                            </p>
-                            <div class="experience-details">
-                                <div class="detail-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>Duration: 3 minutes 45 seconds</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Location: Oregon, USA</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-users"></i>
-                                    <span>Guests: 50+ eclipse chasers</span>
-                                </div>
-                            </div>
-                            <button class="read-more-btn" onclick="toggleExperience(this)">
-                                Read More
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
-                            <div class="experience-full-text" style="display: none;">
-                                <p>
-                                    The journey to Oregon was filled with anticipation and careful planning. I had scouted the location months in advance, ensuring we had the perfect spot with clear skies and minimal light pollution. The morning of the eclipse was crisp and clear, perfect conditions for viewing.
-                                </p>
-                                <p>
-                                    As the moon began to cover the sun, the temperature dropped noticeably, and the light took on an eerie quality. Birds stopped singing, and the world seemed to hold its breath. When the annular phase began, the "ring of fire" was absolutely breathtaking - a perfect circle of sunlight surrounding the dark moon.
-                                </p>
-                                <p>
-                                    I captured the entire event using specialized solar filters and multiple cameras. The resulting images show the progression from partial eclipse through annularity and back to partial. The experience was shared with a diverse group of eclipse chasers, each with their own stories and equipment.
-                                </p>
-                            </div>
+                        <h3>Moon</h3>
+                        <p>There's always more to discover about Earth's natural satellite.</p>
+                    </div>
+                    <div class="featured-item">
+                        <div class="image-placeholder">
+                            <img src="Astro/Intro/M13.jpeg" alt="Great Cluster in Hercules (M13)">
                         </div>
-                    </article>
-
-                    <article class="experience-card">
-                        <div class="experience-image">
-                            <div class="image-placeholder">
-                                <i class="fas fa-star"></i>
-                                <p>Event Image</p>
-                            </div>
+                        <h3>Great Cluster in Hercules</h3>
+                        <p>A peek into the beauty of deep space objects.</p>
+                    </div>
+                    <div class="featured-item">
+                        <div class="image-placeholder">
+                            <img src="Astro/Intro/Saturn.jpeg" alt="Saturn">
                         </div>
-                        <div class="experience-content">
-                            <div class="experience-meta">
-                                <span class="experience-date">August 12, 2024</span>
-                                <span class="experience-category">Star Party</span>
-                            </div>
-                            <h2 class="experience-title">Summer Star Party at the Observatory</h2>
-                            <p class="experience-excerpt">
-                                Hosted my annual summer star party, bringing together amateur astronomers, families, and curious minds for a night of stargazing, telescope viewing, and astronomical education under the pristine dark skies.
-                            </p>
-                            <div class="experience-details">
-                                <div class="detail-item">
-                                    <i class="fas fa-clock"></i>
-                                    <span>Duration: 6 hours</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-map-marker-alt"></i>
-                                    <span>Location: My Observatory</span>
-                                </div>
-                                <div class="detail-item">
-                                    <i class="fas fa-users"></i>
-                                    <span>Guests: 75 attendees</span>
-                                </div>
-                            </div>
-                            <button class="read-more-btn" onclick="toggleExperience(this)">
-                                Read More
-                                <i class="fas fa-chevron-down"></i>
-                            </button>
-                            <div class="experience-full-text" style="display: none;">
-                                <p>
-                                    The summer star party has become one of my favorite events to host. It's a perfect opportunity to share my passion for astronomy with the community and introduce newcomers to the wonders of the night sky. This year's event was particularly special as we had perfect weather conditions.
-                                </p>
-                                <p>
-                                    I set up multiple telescopes throughout the observatory grounds, each pointing to different celestial objects. Visitors could view the rings of Saturn, the moons of Jupiter, distant galaxies, and colorful nebulae. The highlight for many was seeing the Andromeda Galaxy through the 16-inch telescope.
-                                </p>
-                                <p>
-                                    Throughout the evening, I gave several short presentations about the objects we were viewing, their distances, and their significance in our understanding of the universe. The questions from children were particularly insightful and reminded me of my own early fascination with astronomy.
-                                </p>
-                            </div>
-                        </div>
-                    </article>
+                        <h3>Saturn</h3>
+                        <p>Captured the gas giant and its magnificent rings in all their glory.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -246,6 +142,5 @@
     </footer>
 
     <script src="script.js"></script>
-    <script src="experiences.js"></script>
 </body>
 </html>
