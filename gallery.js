@@ -8,38 +8,38 @@ const galleryData = [
         category: "moon",
         image: "Astro/Moon/craters.jpeg",
         type: "image",
-        date: "November 2024",
-        equipment: "26\" Newtonian, High-resolution camera"
+        date: "June 2025",
+        equipment: "Orion Starblast II 4.5 Eq, iPhone 13"
     },
     {
         id: 2,
         title: "Quarter Moon",
-        description: "The moon in its first quarter phase, revealing beautiful surface details.",
+        description: "The moon in its first quarter phase, which is one of the best times to observe its features.",
         category: "moon",
         image: "Astro/Moon/quarter.jpeg",
         type: "image",
-        date: "October 2024",
-        equipment: "26\" Newtonian, LRGB filters"
+        date: "April 2024",
+        equipment: "Orion Starblast II 4.5 Eq, iPhone 13"
     },
     {
         id: 3,
-        title: "Quarter Moon Phase 2",
+        title: "Quarter Moon 2",
         description: "Another perspective of the quarter moon showing different lunar features.",
         category: "moon",
         image: "Astro/Moon/quarter2.jpeg",
         type: "image",
-        date: "September 2024",
-        equipment: "26\" Newtonian, High-resolution imaging"
+        date: "June 2025",
+        equipment: "Orion Starblast II 4.5 Eq, iPhone 13"
     },
     {
         id: 4,
-        title: "Moon and Sun",
-        description: "A rare capture showing both the moon and sun in the same frame.",
+        title: "Sun or Moon?",
+        description: "Though it looks like the sun, it's actually the moon.",
         category: "moon",
         image: "Astro/Moon/moon-sun.jpeg",
         type: "image",
-        date: "May 2024",
-        equipment: "26\" Newtonian, Special filters"
+        date: "August 2023",
+        equipment: "iPhone 13"
     },
     {
         id: 5,
@@ -48,28 +48,28 @@ const galleryData = [
         category: "moon",
         image: "Astro/Moon/edited-moon.jpeg",
         type: "image",
-        date: "April 2024",
-        equipment: "26\" Newtonian, Advanced processing"
+        date: "October 2023",
+        equipment: "Orion Starblast II 4.5 Eq, iPhone 13 Editing"
     },
     {
         id: 6,
-        title: "Moon Copy",
-        description: "Another beautiful capture of our closest celestial neighbor.",
+        title: "The Beauty of the Moon",
+        description: "My personal favorite. It really captures the beauty of the moon.",
         category: "moon",
         image: "Astro/Moon/moon_copy.jpg",
         type: "image",
-        date: "March 2024",
-        equipment: "26\" Newtonian, Standard imaging"
+        date: "March 2025",
+        equipment: "Orion Starblast II 4.5 Eq, iPhone 13"
     },
     {
         id: 7,
-        title: "Moon Video",
-        description: "A dynamic view of the moon captured in motion.",
+        title: "Full Moon Video",
+        description: "A video of the full moon.",
         category: "moon",
         image: "Astro/Moon/moon.mov",
         type: "video",
-        date: "February 2024",
-        equipment: "26\" Newtonian, Video capture"
+        date: "October 2023",
+        equipment: "Orion Starblast II 4.5 Eq, iPhone 13"
     },
     {
         id: 8,
@@ -78,73 +78,73 @@ const galleryData = [
         category: "moon",
         image: "Astro/Moon/moon-cloud.MOV",
         type: "video",
-        date: "January 2024",
-        equipment: "26\" Newtonian, Video capture"
+        date: "June 2025",
+        equipment: "Orion Starblast II 4.5 Eq, iPhone 13"
     },
     // Moon (additional)
     {
         id: 9,
         title: "Strawberry Moon",
-        description: "The Strawberry Moon captured at peak brightness.",
+        description: "The Strawberry Moon captured at peak brightness. What a shade of red!",
         category: "moon",
         image: "Astro/Moon/strawberry.jpeg",
         type: "image",
-        date: "June 2024",
-        equipment: "26\" Newtonian, Color filters"
+        date: "June 2025",
+        equipment: "Orion Starblast II 4.5 Eq, iPhone 13"
     },
     // Star Clusters
     {
         id: 10,
-        title: "Great Cluster in Hercules",
-        description: "A magnificent globular cluster containing hundreds of thousands of stars.",
+        title: "Great Cluster in Hercules (M13)",
+        description: "A magnificent globular cluster containing hundreds of thousands of stars, and my go-to DSO on clear nights.",
         category: "dsos",
         image: "Astro/DSOs/M13.jpeg",
         type: "image",
-        date: "August 2024",
-        equipment: "26\" Newtonian, LRGB filters"
+        date: "July 2025",
+        equipment: "Orion Starblast II 4.5 Eq, iPhone 13"
     },
     {
         id: 11,
         title: "Double Cluster (h and χ Persei)",
-        description: "A striking pair of open clusters in Perseus.",
+        description: "So many stars in such a small area; well it's not actually that small.",
         category: "dsos",
         image: "Astro/DSOs/double_cluster.jpeg",
         type: "image",
-        date: "July 2024",
-        equipment: "26\" Newtonian, LRGB filters"
+        date: "July 2025",
+        equipment: "Orion Starblast II 4.5 Eq, iPhone 13"
     },
     // Deep Sky Objects
     {
         id: 12,
         title: "Ring Nebula",
-        description: "A beautiful planetary nebula in the constellation Lyra.",
+        description: "I guess Saturn isn’t the only one with rings.",
         category: "dsos",
         image: "Astro/DSOs/ring.jpeg",
         type: "image",
-        date: "June 2024",
-        equipment: "26\" Newtonian, OIII/Ha filters"
+        date: "July 2025",
+        equipment: "Orion Starblast II 4.5 Eq, iPhone 13"
     },
     {
         id: 13,
         title: "Dumbbell Nebula",
-        description: "A stunning planetary nebula in the constellation Vulpecula.",
+        description: "Lifting weights in space doesn't seem so hard!",
         category: "dsos",
         image: "Astro/DSOs/dumbell.jpeg",
         type: "image",
-        date: "May 2024",
-        equipment: "26\" Newtonian, OIII/Ha filters"
+        date: "July 2025",
+        equipment: "Orion Starblast II 4.5 Eq, iPhone 13"
     }
     ,
     // Additional DSOs
     {
         id: 14,
         title: "Globular Cluster M5",
-        description: "A bright globular cluster in Serpens.",
+        description: "So dim + cloudy skies! Can't seem to extract much out of this one.",
         category: "dsos",
         image: "Astro/DSOs/M5.jpeg",
         type: "image",
-        date: "May 2024",
-        equipment: "26\" Newtonian, LRGB filters"
+        date: "August 2025",
+        equipment: "Orion Starblast II 4.5 Eq, iPhone 13"
     },
     {
         id: 15,
@@ -153,8 +153,8 @@ const galleryData = [
         category: "dsos",
         image: "Astro/DSOs/pleiades.jpeg",
         type: "image",
-        date: "January 2024",
-        equipment: "Wide-field optics"
+        date: "October 2023",
+        equipment: "Orion Starblast II 4.5 Eq, iPhone 13"
     },
     {
         id: 16,
@@ -163,50 +163,50 @@ const galleryData = [
         category: "dsos",
         image: "Astro/DSOs/pleiades.mov",
         type: "video",
-        date: "January 2024",
-        equipment: "Wide-field optics, video capture"
+        date: "October 2023",
+        equipment: "Orion Starblast II 4.5 Eq, iPhone 13"
     },
     // Additional Moon
     {
         id: 17,
-        title: "Luna",
-        description: "A crisp capture of the lunar surface.",
+        title: "The Moon (Luna 2)",
+        description: "The Moon through a powerful telescope called Luna 2 at my observatory!",
         category: "moon",
         image: "Astro/Moon/luna.jpeg",
         type: "image",
-        date: "Various",
-        equipment: "26\" Newtonian"
+        date: "May 2025",
+        equipment: "Orion Starblast II 4.5 Eq, iPhone 13"
     },
     // Eclipse
-    { id: 18, title: "Eclipse",   description: "Solar eclipse.",        category: "eclipse", image: "Astro/Eclipse/eclipse.jpeg",  type: "image", date: "", equipment: "" },
-    { id: 19, title: "Eclipse 2", description: "Solar eclipse.",        category: "eclipse", image: "Astro/Eclipse/eclipse2.jpeg", type: "image", date: "", equipment: "" },
-    { id: 20, title: "Eclipse 3", description: "Solar eclipse.",        category: "eclipse", image: "Astro/Eclipse/eclipse3.jpeg", type: "image", date: "", equipment: "" },
-    { id: 21, title: "Eclipse Sky", description: "Eclipse sky.",        category: "eclipse", image: "Astro/Eclipse/sky.jpeg",      type: "image", date: "", equipment: "" },
+    { id: 18, title: "Eclipse",   description: "An unedited view of the solar eclipse from New Jersey.",        category: "eclipse", image: "Astro/Eclipse/eclipse.jpeg",  type: "image", date: "April 2024", equipment: "iPhone 13" },
+    { id: 19, title: "Orange Eclipse", description: "Got a nice orange-brown sky from a bit of editing.",        category: "eclipse", image: "Astro/Eclipse/eclipse2.jpeg", type: "image", date: "April 2024", equipment: "iPhone 13" },
+    { id: 20, title: "Pure Eclipse", description: "Turning the exposure all the way down got me this!",        category: "eclipse", image: "Astro/Eclipse/eclipse3.jpeg", type: "image", date: "April 2024", equipment: "iPhone 13" },
+    { id: 21, title: "Eclipse Sky", description: "On the other hand, turning it up made it look like a gateway to another world!",        category: "eclipse", image: "Astro/Eclipse/sky.jpeg",      type: "image", date: "April 2024", equipment: "iPhone 13" },
     // Misc
-    { id: 22, title: "Egypt",     description: "Night sky over Egypt.", category: "misc",    image: "Astro/Misc/egypt.jpeg",      type: "image", date: "", equipment: "" },
-    { id: 23, title: "Lunar Eclipse", description: "Lunar eclipse.",   category: "misc",    image: "Astro/Misc/lunar_eclipse.jpeg", type: "image", date: "", equipment: "" },
-    { id: 24, title: "Moon Photobomb", description: "Photobomb.",     category: "misc",    image: "Astro/Misc/moon_photobomb.jpeg", type: "image", date: "", equipment: "" },
-    { id: 25, title: "Rainbow",   description: "Rainbow.",             category: "misc",    image: "Astro/Misc/rainbow.jpeg",     type: "image", date: "", equipment: "" },
-    { id: 26, title: "Rainbow 2", description: "Rainbow.",             category: "misc",    image: "Astro/Misc/rainbow2.jpeg",    type: "image", date: "", equipment: "" },
-    { id: 27, title: "Rocket",    description: "Rocket.",              category: "misc",    image: "Astro/Misc/rocket.jpeg",      type: "image", date: "", equipment: "" },
-    { id: 28, title: "Rocket 2",  description: "Rocket.",              category: "misc",    image: "Astro/Misc/rocket2.jpeg",     type: "image", date: "", equipment: "" },
-    { id: 29, title: "Sky 2",     description: "Sky scene.",           category: "misc",    image: "Astro/Misc/sky2.jpeg",       type: "image", date: "", equipment: "" },
-    { id: 30, title: "Stargazing", description: "On a mountain.",      category: "misc",    image: "Astro/Misc/stargazing_on_mountain.jpeg", type: "image", date: "", equipment: "" },
-    { id: 31, title: "Sunset",    description: "Sunset.",              category: "misc",    image: "Astro/Misc/sunset.jpeg",     type: "image", date: "", equipment: "" },
+    { id: 22, title: "Egypt",     description: "A beautiful sunrise in Egypt.", category: "misc",    image: "Astro/Misc/egypt.jpeg",      type: "image", date: "April 2025", equipment: "iPhone SE" },
+    { id: 23, title: "Lunar Eclipse", description: "Partial lunar eclipse was only visible for a few seconds before it vanished into the trees.",   category: "misc",    image: "Astro/Misc/lunar_eclipse.jpeg", type: "image", date: "October 2023", equipment: "iPhone 13" },
+    { id: 24, title: "Moon Photobomb", description: "Moon photobomb at the top left!",     category: "misc",    image: "Astro/Misc/moon_photobomb.jpeg", type: "image", date: "April 2025", equipment: "iPhone SE" },
+    { id: 25, title: "Rainbow",   description: "Got a stunning view of a rainbow on a beautiful day.",             category: "misc",    image: "Astro/Misc/rainbow.jpeg",     type: "image", date: "September 2024", equipment: "iPhone 13" },
+    { id: 26, title: "Full Rainbow", description: "Got another rainbow, this time from end to end. I can clearly see where the pot of gold is!",             category: "misc",    image: "Astro/Misc/rainbow2.jpeg",    type: "image", date: "May 2023", equipment: "iPhone 13" },
+    { id: 27, title: "Close-Up Rocket",    description: "Got a look at the ULA Vulcan rocket through my telescope.",              category: "misc",    image: "Astro/Misc/rocket.jpeg",      type: "image", date: "August 2025", equipment: "Orion Starblast II 4.5 Eq, iPhone 13" },
+    { id: 28, title: "ULA Vulcan Rocket",  description: "Thought this was a UFO at first!",              category: "misc",    image: "Astro/Misc/rocket2.jpeg",     type: "image", date: "August 2025", equipment: "iPhone" },
+    { id: 29, title: "Clouds",     description: "Sometimes you realize just how beautiful the clouds are.",           category: "misc",    image: "Astro/Misc/sky2.jpeg",       type: "image", date: "September 2023", equipment: "iPhone" },
+    { id: 30, title: "Stargazing", description: "My friend and I stargazing on a mountain!",      category: "misc",    image: "Astro/Misc/stargazing_on_mountain.jpeg", type: "image", date: "October 2024", equipment: "iPhone 13" },
+    { id: 31, title: "Sunset",    description: "What a magnificent sunset!",              category: "misc",    image: "Astro/Misc/sunset.jpeg",     type: "image", date: "July 2024", equipment: "iPhone 13" },
     // Plane
-    { id: 32, title: "Caverns",   description: "Aerial scene.",        category: "plane",   image: "Astro/Plane/caverns.jpeg",    type: "image", date: "", equipment: "" },
-    { id: 33, title: "Cloud Explosion", description: "Clouds.",        category: "plane",   image: "Astro/Plane/cloud_explosion.jpeg", type: "image", date: "", equipment: "" },
-    { id: 34, title: "Plane Moon", description: "Plane and Moon.",     category: "plane",   image: "Astro/Plane/moon.jpeg",       type: "image", date: "", equipment: "" },
-    { id: 35, title: "Plane Moon 2", description: "Plane and Moon.",   category: "plane",   image: "Astro/Plane/moon2.jpeg",      type: "image", date: "", equipment: "" },
-    { id: 36, title: "Stunning",  description: "Stunning skies.",      category: "plane",   image: "Astro/Plane/stunning.jpeg",   type: "image", date: "", equipment: "" },
-    { id: 37, title: "Sunset (Plane)", description: "Sunset above.",   category: "plane",   image: "Astro/Plane/sunset.jpeg",     type: "image", date: "", equipment: "" },
-    { id: 38, title: "Plane Timelapse", description: "Timelapse.",     category: "plane",   image: "Astro/Plane/timelapse.mov",   type: "video", date: "", equipment: "" },
+    { id: 32, title: "Caverns",   description: "I didn't know they had caverns in the sky.",        category: "plane",   image: "Astro/Plane/caverns.jpeg",    type: "image", date: "August 2025", equipment: "iPhone 13" },
+    { id: 33, title: "Cloud Explosion", description: "Always finding random clouds shapes, like this one! Wonder what caused it.",        category: "plane",   image: "Astro/Plane/cloud_explosion.jpeg", type: "image", date: "July 2024", equipment: "iPhone 13" },
+    { id: 34, title: "Plane+Moon", description: "Got a view of the moon through my plane window during sunset!",     category: "plane",   image: "Astro/Plane/moon.jpeg",       type: "image", date: "August 2025", equipment: "iPhone 13" },
+    { id: 35, title: "Plane+Moon 2", description: "Another look at the same scenario but darker.",   category: "plane",   image: "Astro/Plane/moon2.jpeg",      type: "image", date: "August 2025", equipment: "iPhone 13" },
+    { id: 36, title: "Stunning Sunset",  description: "Beautiful sunset in the sky. You can really capture some nice pictures.",      category: "plane",   image: "Astro/Plane/stunning.jpeg",   type: "image", date: "August 2025", equipment: "iPhone 13" },
+    { id: 37, title: "Sunset 2", description: "Sun right at the horizon creates a streak of orange.",   category: "plane",   image: "Astro/Plane/sunset.jpeg",     type: "image", date: "August 2024", equipment: "iPhone 13" },
+    { id: 38, title: "Plane Timelapse", description: "Timelapse of plane.",     category: "plane",   image: "Astro/Plane/timelapse.mov",   type: "video", date: "July 2024", equipment: "iPhone 13" },
     // Planets
-    { id: 39, title: "Jupiter",   description: "Jupiter and bands.",   category: "planets", image: "Astro/Planets/jupiter.jpeg",  type: "image", date: "", equipment: "" },
-    { id: 40, title: "Saturn",    description: "Saturn with rings.",   category: "planets", image: "Astro/Planets/Saturn.jpeg",  type: "image", date: "", equipment: "" },
-    { id: 41, title: "Venus",     description: "Brilliant Venus.",     category: "planets", image: "Astro/Planets/venus.jpeg",   type: "image", date: "", equipment: "" },
+    { id: 39, title: "Jupiter",   description: "Jupiter and its moons. Didn't know how to adjust exposure back then!",   category: "planets", image: "Astro/Planets/jupiter.jpeg",  type: "image", date: "September 2023", equipment: "Orion Starblast II 4.5 Eq, iPhone 13" },
+    { id: 40, title: "Saturn",    description: "One of my favorite images. Captures Saturn's rings in all their glory.",   category: "planets", image: "Astro/Planets/Saturn.jpeg",  type: "image", date: "September 2023", equipment: "Orion Starblast II 4.5 Eq, iPhone 13" },
+    { id: 41, title: "Venus?",     description: "Not the best image, wonder why Venus turned out like this.",     category: "planets", image: "Astro/Planets/venus.jpeg",   type: "image", date: "March 2025", equipment: "Orion Starblast II 4.5 Eq, iPhone 13" },
     // Stars
-    { id: 42, title: "First Light", description: "First light capture.", category: "stars", image: "Astro/Stars/first_light.jpeg", type: "image", date: "", equipment: "" }
+    { id: 42, title: "First Light", description: "My very first look into a telescope!", category: "stars", image: "Astro/Stars/first_light.jpeg", type: "image", date: "September 2023", equipment: "Orion Starblast II 4.5 Eq, iPhone 13" }
 ];
 
 // Gallery functionality
