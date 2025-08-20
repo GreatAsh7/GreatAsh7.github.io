@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ashtronomy - Astrophotography Portfolio</title>
+    <title>Experiences - Ashtronomy</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="experiences.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -20,13 +21,13 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="gallery.html" class="nav-link">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a href="experiences.html" class="nav-link">Experiences</a>
+                    <a href="experiences.html" class="nav-link active">Experiences</a>
                 </li>
                 <li class="nav-item">
                     <a href="observatory.html" class="nav-link">Observatory</a>
@@ -41,73 +42,141 @@
     </nav>
 
     <main class="main-content">
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">Welcome to the Cosmos</h1>
-                <p class="hero-subtitle">Exploring the universe through the lens of ashtrophotography</p>
-                <div class="hero-buttons">
-                    <a href="gallery.html" class="btn btn-primary">View Gallery</a>
-                    <a href="experiences.html" class="btn btn-secondary">Read Stories</a>
-                </div>
+        <section class="experiences-hero">
+            <div class="container">
+                <h1 class="experiences-title">Ashtronomy Experiences</h1>
+                <p class="experiences-subtitle">Stories from under the stars</p>
             </div>
         </section>
 
-        <section class="about-section">
+        <section class="experiences-section">
             <div class="container">
-                <div class="about-content">
-                    <div class="about-text">
-                        <h2>About Me</h2>
-                        <p>Welcome to my cosmic corner of the internet! I'm Ashwin, a passionate astrophotographer dedicated to capturing the beauty of our universe. Through long nights under the stars, I've learned to translate the wonders of space into images that tell stories of our solar system, DSOs, and other celestial events.</p>
-                        <p>My journey in astronomy began with a simple telescope (Orion Starblast II 4.5) and has evolved into a deep exploration of both the technical and artistic aspects of astrophotography. Join me as I share my experiences and move forward in my astronomical journey!</p>
-                        <div class="stats">
-                            <div class="stat">
-                                <span class="stat-number">100+</span>
-                                <span class="stat-label">Images Taken</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">∞</span>
-                                <span class="stat-label">Passion</span>
-                            </div>
-                            <div class="stat">
-                                <span class="stat-number">100+</span>
-                                <span class="stat-label">Hours Under Stars</span>
+                <div class="experiences-grid">
+                    <article class="experience-card">
+                        <div class="experience-image">
+                            <div class="image-placeholder">
+                                <i class="fas fa-star"></i>
+                                <p>Coming soon!</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="about-image">
-                        <div class="image-placeholder">
-                            <img src="Astro/Intro/ashwin.jpeg" alt="Ashwin">
+                        <div class="experience-content">
+                            <div class="experience-meta">
+                                <span class="experience-date">August 22, 2025</span>
+                                <span class="experience-category">Star Party</span>
+                            </div>
+                            <h2 class="experience-title">Spruce Run Star Party</h2>
+                            <p class="experience-excerpt">
+                                Co-hosted a booth (alongside my friend) at the Spruce Run Star Party, where I operated a SeeStar and my Orion Starblast to educate the public on various astronomical sights. Interacted with other professionals to further my knowledge about astronomy as well!
+                            </p>
+                            <div class="experience-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration: 6 hours</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location: Spruce Run Recreational Area, Clinton, NJ</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Guests: 100+ attendees</span>
+                                </div>
+                            </div>
+                            <button class="read-more-btn" onclick="toggleExperience(this)">
+                                Read More
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                            <div class="experience-full-text" style="display: none;">
+                                <p>
+                                    Coming soon!
+                                </p>
+                                <p>
+                                </p>
+                                <p>
+                                </p>
+                                <div class="experience-gallery">
+                                    <h3>Photos from the Event</h3>
+                                    <div class="mini-gallery">
+                                        <div class="mini-image">
+                                            <i class="fas fa-image"></i>
+                                            <p></p>
+                                        </div>
+                                        <div class="mini-image">
+                                            <i class="fas fa-image"></i>
+                                            <p></p>
+                                        </div>
+                                        <div class="mini-image">
+                                            <i class="fas fa-image"></i>
+                                            <p></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    </article>
+                    <article class="experience-card">
+                        <div class="experience-image">
+                            <div class="image-placeholder">
+                                <img src="Astro/Experiences/strawberrymoon.jpeg" alt="Strawberry Moon Viewing">
+                            </div>
+                        </div>
+                        <div class="experience-content">
+                            <div class="experience-meta">
+                                <span class="experience-date">June 11th, 2025</span>
+                                <span class="experience-category">Astronomical Event</span>
+                            </div>
+                            <h2 class="experience-title">Strawberry Moon</h2>
+                            <p class="experience-excerpt">
+                                Although it’s called the Strawberry Moon, it usually doesn’t appear red — or does it? This year, the Moon actually took on a subtle reddish hue, drawing crowds outside to catch a glimpse. I quickly set up my telescope to help them get a closer look.                            
+                            </p>
+                            <div class="experience-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration: 1 Hour</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location: My House</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Guests: 20 People</span>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
 
-        <section class="featured-section">
-            <div class="container">
-                <h2>Featured Images</h2>
-                <div class="featured-grid">
-                    <div class="featured-item">
-                        <div class="image-placeholder">
-                            <img src="Astro/Intro/moon.jpg" alt="Moon">
+                    <article class="experience-card">
+                        <div class="experience-image">
+                            <div class="image-placeholder">
+                                <img src="Astro/Experiences/eclipse.jpeg" alt="Strawberry Moon Viewing">
+                            </div>
                         </div>
-                        <h3>Moon</h3>
-                        <p>There's always more to discover about Earth's natural satellite.</p>
-                    </div>
-                    <div class="featured-item">
-                        <div class="image-placeholder">
-                            <img src="Astro/Intro/M13.jpeg" alt="Great Cluster in Hercules (M13)">
+                        <div class="experience-content">
+                            <div class="experience-meta">
+                                <span class="experience-date">April 8th, 2024</span>
+                                <span class="experience-category">Astronomical Event</span>
+                            </div>
+                            <h2 class="experience-title">Solar Eclipse Viewing at School</h2>
+                            <p class="experience-excerpt">
+                                To celebrate the partial solar eclipse, my school provided everyone with glasses and took us to the field for a viewing session. I watched demonstrations performed by my teachers, made new astro buddies, and got some nice pictures! 
+                            </p>
+                            <div class="experience-details">
+                                <div class="detail-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Duration: 2 Hours</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location: My School, Edison, NJ</span>
+                                </div>
+                                <div class="detail-item">
+                                    <i class="fas fa-users"></i>
+                                    <span>Guests: 150+ Students</span>
+                                </div>
+                            </div>
                         </div>
-                        <h3>Great Cluster in Hercules</h3>
-                        <p>A peek into the beauty of deep space objects.</p>
-                    </div>
-                    <div class="featured-item">
-                        <div class="image-placeholder">
-                            <img src="Astro/Intro/Saturn.jpeg" alt="Saturn">
-                        </div>
-                        <h3>Saturn</h3>
-                        <p>Captured the gas giant and its magnificent rings in all their glory.</p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -142,5 +211,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="experiences.js"></script>
 </body>
 </html>
