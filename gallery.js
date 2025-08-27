@@ -188,25 +188,63 @@ const galleryData = [
     { id: 24, title: "Moon Photobomb", description: "Moon photobomb at the top left!",     category: "misc",    image: "Astro/Misc/moon_photobomb.jpeg", type: "image", date: "April 2025", equipment: "iPhone SE" },
     { id: 25, title: "Rainbow",   description: "Got a stunning view of a rainbow on a beautiful day.",             category: "misc",    image: "Astro/Misc/rainbow.jpeg",     type: "image", date: "September 2024", equipment: "iPhone 13" },
     { id: 26, title: "Full Rainbow", description: "Got another rainbow, this time from end to end. I can clearly see where the pot of gold is!",             category: "misc",    image: "Astro/Misc/rainbow2.jpeg",    type: "image", date: "May 2023", equipment: "iPhone 13" },
-    { id: 27, title: "Close-Up Rocket",    description: "Got a look at the ULA Vulcan rocket through my telescope.",              category: "misc",    image: "Astro/Misc/rocket.jpeg",      type: "image", date: "August 2025", equipment: "Orion Starblast II 4.5 Eq, iPhone 13" },
-    { id: 28, title: "ULA Vulcan Rocket",  description: "Thought this was a UFO at first!",              category: "misc",    image: "Astro/Misc/rocket2.jpeg",     type: "image", date: "August 2025", equipment: "iPhone" },
-    { id: 29, title: "Clouds",     description: "Sometimes you realize just how beautiful the clouds are.",           category: "misc",    image: "Astro/Misc/sky2.jpeg",       type: "image", date: "September 2023", equipment: "iPhone" },
-    { id: 30, title: "Stargazing", description: "My friend and I stargazing on a mountain!",      category: "misc",    image: "Astro/Misc/stargazing_on_mountain.jpeg", type: "image", date: "October 2024", equipment: "iPhone 13" },
-    { id: 31, title: "Sunset",    description: "What a magnificent sunset!",              category: "misc",    image: "Astro/Misc/sunset.jpeg",     type: "image", date: "July 2024", equipment: "iPhone 13" },
+
+    { id: 27, title: "Clouds",     description: "Sometimes you realize just how beautiful the clouds are.",           category: "misc",    image: "Astro/Misc/sky2.jpeg",       type: "image", date: "September 2023", equipment: "iPhone" },
+    { id: 28, title: "Stargazing", description: "My friend and I stargazing on a mountain!",      category: "misc",    image: "Astro/Misc/stargazing_on_mountain.jpeg", type: "image", date: "October 2024", equipment: "iPhone 13" },
+    { id: 29, title: "Sunset",    description: "What a magnificent sunset!",              category: "misc",    image: "Astro/Misc/sunset.jpeg",     type: "image", date: "July 2024", equipment: "iPhone 13" },
+    { id: 30, title: "Spruce Run", description: "Sunset from the Spruce Run event.", category: "misc", image: "Astro/Misc/spruce_run.jpg", type: "image", date: "August 2025", equipment: "Canon Rebel T8I" },
     // Plane
-    { id: 32, title: "Caverns",   description: "I didn't know they had caverns in the sky.",        category: "plane",   image: "Astro/Plane/caverns.jpeg",    type: "image", date: "August 2025", equipment: "iPhone 13" },
-    { id: 33, title: "Cloud Explosion", description: "Always finding random clouds shapes, like this one! Wonder what caused it.",        category: "plane",   image: "Astro/Plane/cloud_explosion.jpeg", type: "image", date: "July 2024", equipment: "iPhone 13" },
-    { id: 34, title: "Plane+Moon", description: "Got a view of the moon through my plane window during sunset!",     category: "plane",   image: "Astro/Plane/moon.jpeg",       type: "image", date: "August 2025", equipment: "iPhone 13" },
-    { id: 35, title: "Plane+Moon 2", description: "Another look at the same scenario but darker.",   category: "plane",   image: "Astro/Plane/moon2.jpeg",      type: "image", date: "August 2025", equipment: "iPhone 13" },
-    { id: 36, title: "Stunning Sunset",  description: "Beautiful sunset in the sky. You can really capture some nice pictures.",      category: "plane",   image: "Astro/Plane/stunning.jpeg",   type: "image", date: "August 2025", equipment: "iPhone 13" },
-    { id: 37, title: "Sunset 2", description: "Sun right at the horizon creates a streak of orange.",   category: "plane",   image: "Astro/Plane/sunset.jpeg",     type: "image", date: "August 2024", equipment: "iPhone 13" },
-    { id: 38, title: "Plane Timelapse", description: "Timelapse of plane.",     category: "plane",   image: "Astro/Plane/timelapse.mov",   type: "video", date: "July 2024", equipment: "iPhone 13" },
+    { id: 31, title: "Caverns",   description: "I didn't know they had caverns in the sky.",        category: "plane",   image: "Astro/Plane/caverns.jpeg",    type: "image", date: "August 2025", equipment: "iPhone 13" },
+    { id: 32, title: "Cloud Explosion", description: "Always finding random clouds shapes, like this one! Wonder what caused it.",        category: "plane",   image: "Astro/Plane/cloud_explosion.jpeg", type: "image", date: "July 2024", equipment: "iPhone 13" },
+    { id: 33, title: "Plane+Moon", description: "Got a view of the moon through my plane window during sunset!",     category: "plane",   image: "Astro/Plane/moon.jpeg",       type: "image", date: "August 2025", equipment: "iPhone 13" },
+    { id: 34, title: "Plane+Moon 2", description: "Another look at the same scenario but darker.",   category: "plane",   image: "Astro/Plane/moon2.jpeg",      type: "image", date: "August 2025", equipment: "iPhone 13" },
+    { id: 35, title: "Stunning Sunset",  description: "Beautiful sunset in the sky. You can really capture some nice pictures.",      category: "plane",   image: "Astro/Plane/stunning.jpeg",   type: "image", date: "August 2025", equipment: "iPhone 13" },
+    { id: 36, title: "Sunset 2", description: "Sun right at the horizon creates a streak of orange.",   category: "plane",   image: "Astro/Plane/sunset.jpeg",     type: "image", date: "August 2024", equipment: "iPhone 13" },
+    { id: 37, title: "Plane Timelapse", description: "Timelapse of plane.",     category: "plane",   image: "Astro/Plane/timelapse.mov",   type: "video", date: "July 2024", equipment: "iPhone 13" },
     // Planets
-    { id: 39, title: "Jupiter",   description: "Jupiter and its moons. Didn't know how to adjust exposure back then!",   category: "planets", image: "Astro/Planets/jupiter.jpeg",  type: "image", date: "September 2023", equipment: "Orion Starblast II 4.5 Eq, iPhone 13" },
-    { id: 40, title: "Saturn",    description: "One of my favorite images. Captures Saturn's rings in all their glory.",   category: "planets", image: "Astro/Planets/Saturn.jpeg",  type: "image", date: "September 2023", equipment: "Orion Starblast II 4.5 Eq, iPhone 13" },
-    { id: 41, title: "Venus?",     description: "Not the best image, wonder why Venus turned out like this.",     category: "planets", image: "Astro/Planets/venus.jpeg",   type: "image", date: "March 2025", equipment: "Orion Starblast II 4.5 Eq, iPhone 13" },
+    { id: 38, title: "Jupiter",   description: "Jupiter and its moons. Didn't know how to adjust exposure back then!",   category: "planets", image: "Astro/Planets/jupiter.jpeg",  type: "image", date: "September 2023", equipment: "Orion Starblast II 4.5 Eq, iPhone 13" },
+    { id: 39, title: "Saturn",    description: "One of my favorite images. Captures Saturn's rings in all their glory.",   category: "planets", image: "Astro/Planets/Saturn.jpeg",  type: "image", date: "September 2023", equipment: "Orion Starblast II 4.5 Eq, iPhone 13" },
+    { id: 40, title: "Venus?",     description: "Not the best image, wonder why Venus turned out like this.",     category: "planets", image: "Astro/Planets/venus.jpeg",   type: "image", date: "March 2025", equipment: "Orion Starblast II 4.5 Eq, iPhone 13" },
     // Stars
-    { id: 42, title: "First Light", description: "My very first look into a telescope!", category: "stars", image: "Astro/Stars/first_light.jpeg", type: "image", date: "September 2023", equipment: "Orion Starblast II 4.5 Eq, iPhone 13" }
+    { id: 41, title: "First Light", description: "My very first look into a telescope!", category: "stars", image: "Astro/Stars/first_light.jpeg", type: "image", date: "September 2023", equipment: "Orion Starblast II 4.5 Eq, iPhone 13" },
+    { id: 42, title: "Vega", description: "The star Vega captured with SeeStar.", category: "seestar", image: "Astro/Stars/Stacked_1_Vega_30.0s_IRCUT_20250825-204456.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    
+    // Sky Images
+    { id: 43, title: "Beautiful Milky Way", description: "A stunning view of the Milky Way galaxy stretching across the night sky.", category: "sky", image: "Astro/Sky/beautiful_milky_way.JPG", type: "image", date: "August 2025", equipment: "Canon Rebel T8I" },
+    { id: 44, title: "Unedited Milky Way", description: "Raw capture of the Milky Way before any processing or editing.", category: "sky", image: "Astro/Sky/unedited_beautiful_milky_way.JPEG", type: "image", date: "August 2025", equipment: "Canon Rebel T8I" },
+    { id: 45, title: "Faint Milky Way", description: "A more subtle view of the Milky Way showing its delicate structure.", category: "sky", image: "Astro/Sky/faint_milky_way.jpeg", type: "image", date: "August 2025", equipment: "iPhone 13" },
+    { id: 46, title: "Faint Milky Way 2", description: "Another perspective of the faint Milky Way showing different regions.", category: "sky", image: "Astro/Sky/faint_milky_way2.jpeg", type: "image", date: "August 2025", equipment: "iPhone 13" },
+    { id: 47, title: "Star Trails", description: "Exposure showing slight movement of stars across the night sky.", category: "sky", image: "Astro/Sky/star_trails.jpeg", type: "image", date: "August 2025", equipment: "iPhone 13" },
+    { id: 48, title: "Car Light Trails", description: "Long exposure capturing the trails of car lights on a road and sky.", category: "sky", image: "Astro/Sky/cars_trails.jpeg", type: "image", date: "August 2025", equipment: "iPhone 13" },
+    { id: 49, title: "Starry Sky", description: "A different view of the sky showing many stars.", category: "sky", image: "Astro/Sky/another_sky.jpg", type: "image", date: "August 2025", equipment: "Canon Rebel T8I" },
+    
+    // Objects
+    { id: 52, title: "Airplane Trails", description: "An airplane captured during a long exposure!", category: "objects", image: "Astro/Objects/airplane.JPG", type: "image", date: "August 2025", equipment: "Canon Rebel T8I" },
+    { id: 53, title: "Unedited Airplane Trails", description: "Raw capture before any editing.", category: "objects", image: "Astro/Objects/unedited_airplane.JPEG", type: "image", date: "August 2025", equipment: "Canon Rebel T8I" },
+    { id: 54, title: "Starlink Satellites", description: "A train of Starlink satellites passing overhead.", category: "objects", image: "Astro/Objects/starlinks2.jpeg", type: "image", date: "August 2025", equipment: "iPhone 13" },
+    { id: 55, title: "Starlink Video", description: "Video of Starlink satellites moving across the sky.", category: "objects", image: "Astro/Objects/starlinks.MOV", type: "video", date: "August 2025", equipment: "iPhone 13" },
+    { id: 56, title: "ULA Vulcan Rocket", description: "View of the ULA Vulcan Rocket from telescope.", category: "objects", image: "Astro/Objects/rocket.jpeg", type: "image", date: "August 2025", equipment: "iPhone 13" },
+    { id: 57, title: "Zoomed-In Rocket", description: "ULA Vulcan Rocket captured!", category: "objects", image: "Astro/Objects/rocket2.jpeg", type: "image", date: "August 2025", equipment: "iPhone 13" },
+    
+    // SeeStar Images
+    { id: 58, title: "Sun", description: "The sun (and sunspot!) captured through the SeeStar telescope.", category: "seestar", image: "Astro/Seestar/sun.jpeg", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 59, title: "NGC 6995 - Eastern Veil Nebula", description: "Deep sky object NGC 6995 captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_11_NGC 6995_30.0s_LP_20250825-210946.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 60, title: "M31 - Andromeda Galaxy", description: "The Andromeda Galaxy (M31) captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_23_M 31_10.0s_IRCUT_20250822-204002.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 61, title: "M13 - Hercules Cluster", description: "The Great Cluster in Hercules (M13) captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_28_M 13_10.0s_IRCUT_20250822-205003.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 62, title: "M8 - Lagoon Nebula", description: "The Lagoon Nebula (M8) captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_15_M 8_10.0s_LP_20250822-203003.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 63, title: "M27 - Dumbbell Nebula", description: "The Dumbbell Nebula (M27) captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_25_M 27_10.0s_LP_20250822-213004.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 64, title: "NGC 281 - Pacman Nebula", description: "The Pacman Nebula (NGC 281) captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_12_NGC 281_10.0s_LP_20250822-212002.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 65, title: "M101 - Pinwheel Galaxy", description: "The Pinwheel Galaxy (M101) captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_31_M 101_10.0s_IRCUT_20250822-214002.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 66, title: "C55 - Saturn Nebula", description: "The Saturn Nebula (C55) captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_19_C 55_10.0s_IRCUT_20250822-210003.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 67, title: "C14 - Double Cluster", description: "The Double Cluster (C14) captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_23_C 14_10.0s_IRCUT_20250822-211003.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 68, title: "M81 - Bode's Galaxy", description: "Bode's Galaxy (M81) captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_26_M 81_10.0s_IRCUT_20250822-221003.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 69, title: "M22 - Sagittarius Cluster", description: "The Sagittarius Cluster (M22) captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_34_M 22_10.0s_IRCUT_20250822-220004.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 70, title: "NGC 6572 - Blue Racquetball", description: "The Blue Racquetball Nebula (NGC 6572) captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_17_NGC 6572_10.0s_IRCUT_20250822-222002.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 71, title: "M51 - Whirlpool Galaxy", description: "The Whirlpool Galaxy (M51) captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_18_M 51_10.0s_IRCUT_20250822-224003.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 72, title: "M12 - Gumball Cluster", description: "The Gumball Cluster (M12) captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_29_M 12_10.0s_IRCUT_20250822-225002.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 73, title: "M20 - Trifid Nebula", description: "The Trifid Nebula (M20) captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_28_M 20_10.0s_LP_20250822-215003.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 74, title: "M32 - Andromeda Satellite", description: "M32, a satellite galaxy of Andromeda, captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_23_M 32_10.0s_IRCUT_20250822-223002.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 75, title: "M16 - Eagle Nebula", description: "The Eagle Nebula (M16) captured with SeeStar.", category: "seestar", image: "Astro/Seestar/JPEG image-46B0-B712-28-0.JPEG", type: "image", date: "August 2025", equipment: "SeeStar S50" }
 ];
 
 // Gallery functionality
@@ -226,7 +264,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
 
-    let currentCategory = 'all';
+    let currentCategory = 'moon';
     let currentImageIndex = 0;
     let filteredImages = [];
     let currentVideo = null;
@@ -234,7 +272,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize gallery
     function initGallery() {
         try {
-        renderGallery(galleryData);
+        filterGallery('moon');
         setupEventListeners();
             console.log('Gallery initialized successfully');
         } catch (error) {
@@ -298,14 +336,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Get category display name
     function getCategoryName(category) {
         const categoryNames = {
-            'all': 'All Images',
             'dsos': 'DSOs',
             'eclipse': 'Eclipse',
             'misc': 'Misc',
             'moon': 'Moon',
             'plane': 'Plane',
             'planets': 'Planets',
-            'stars': 'Stars'
+            'stars': 'Stars',
+            'sky': 'Sky',
+            'objects': 'Objects',
+            'seestar': 'SeeStar'
         };
         return categoryNames[category] || category;
     }
@@ -313,11 +353,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Filter gallery by category
     function filterGallery(category) {
         currentCategory = category;
-        if (category === 'all') {
-            filteredImages = galleryData;
-        } else {
-            filteredImages = galleryData.filter(image => image.category === category);
-        }
+        filteredImages = galleryData.filter(image => image.category === category);
         renderGallery(filteredImages);
         updateCategoryButtons();
     }
@@ -358,7 +394,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Open lightbox
     function openLightbox(index) {
         try {
-            const items = currentCategory === 'all' ? galleryData : filteredImages;
+            const items = filteredImages;
             const item = items[index];
         currentImageIndex = index;
         
@@ -462,7 +498,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Navigate lightbox
     function navigateLightbox(direction) {
-        const items = currentCategory === 'all' ? galleryData : filteredImages;
+        const items = filteredImages;
         if (direction === 'prev') {
             currentImageIndex = currentImageIndex > 0 ? currentImageIndex - 1 : items.length - 1;
         } else {
@@ -551,8 +587,8 @@ function addImageToGallery(imageData) {
         ...imageData
     });
     
-    if (currentCategory === 'all' || imageData.category === currentCategory) {
-        renderGallery(currentCategory === 'all' ? galleryData : filteredImages);
+    if (imageData.category === currentCategory) {
+        renderGallery(filteredImages);
     }
 }
 
@@ -564,7 +600,7 @@ function addVideoToGallery(videoData) {
         ...videoData
     });
     
-    if (currentCategory === 'all' || videoData.category === currentCategory) {
-        renderGallery(currentCategory === 'all' ? galleryData : filteredImages);
+    if (videoData.category === currentCategory) {
+        renderGallery(filteredImages);
     }
 }
