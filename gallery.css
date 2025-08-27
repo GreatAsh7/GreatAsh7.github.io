@@ -33,7 +33,7 @@
     position: relative;
     max-width: 100%;
     overflow: visible; /* allow button glow to show outside container */
-    z-index: 1100; /* ensure above background layers */
+    z-index: 100; /* ensure below navbar */
 }
 
 .category-nav-container {
