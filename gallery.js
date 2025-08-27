@@ -189,7 +189,7 @@ const galleryData = [
     { id: 25, title: "Rainbow",   description: "Got a stunning view of a rainbow on a beautiful day.",             category: "misc",    image: "Astro/Misc/rainbow.jpeg",     type: "image", date: "September 2024", equipment: "iPhone 13" },
     { id: 26, title: "Full Rainbow", description: "Got another rainbow, this time from end to end. I can clearly see where the pot of gold is!",             category: "misc",    image: "Astro/Misc/rainbow2.jpeg",    type: "image", date: "May 2023", equipment: "iPhone 13" },
 
-    { id: 27, title: "Clouds",     description: "Sometimes you realize just how beautiful the clouds are.",           category: "misc",    image: "Astro/Misc/sky2.jpeg",       type: "image", date: "September 2023", equipment: "iPhone" },
+    { id: 27, title: "Clouds",     description: "Sometimes you realize just how beautiful the clouds are.",           category: "misc",    image: "Astro/Misc/sky2.jpeg",       type: "image", date: "September 2023", equipment: "iPhone 13" },
     { id: 28, title: "Stargazing", description: "My friend and I stargazing on a mountain!",      category: "misc",    image: "Astro/Misc/stargazing_on_mountain.jpeg", type: "image", date: "October 2024", equipment: "iPhone 13" },
     { id: 29, title: "Sunset",    description: "What a magnificent sunset!",              category: "misc",    image: "Astro/Misc/sunset.jpeg",     type: "image", date: "July 2024", equipment: "iPhone 13" },
     { id: 30, title: "Spruce Run", description: "Sunset from the Spruce Run event.", category: "misc", image: "Astro/Misc/spruce_run.jpg", type: "image", date: "August 2025", equipment: "Canon Rebel T8I" },
