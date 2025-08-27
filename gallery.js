@@ -207,7 +207,7 @@ const galleryData = [
     { id: 40, title: "Venus?",     description: "Not the best image, wonder why Venus turned out like this.",     category: "planets", image: "Astro/Planets/venus.jpeg",   type: "image", date: "March 2025", equipment: "Orion Starblast II 4.5 Eq, iPhone 13" },
     // Stars
     { id: 41, title: "First Light", description: "My very first look into a telescope!", category: "stars", image: "Astro/Stars/first_light.jpeg", type: "image", date: "September 2023", equipment: "Orion Starblast II 4.5 Eq, iPhone 13" },
-    { id: 42, title: "Vega", description: "The star Vega captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_1_Vega_30.0s_IRCUT_20250825-204456.JPG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
+    { id: 42, title: "Vega", description: "The star Vega captured with SeeStar.", category: "seestar", image: "Astro/Seestar/Stacked_1_Vega_30.0s_IRCUT_20250825-204456.JPEG", type: "image", date: "August 2025", equipment: "SeeStar S50" },
     
     // Sky Images
     { id: 43, title: "Beautiful Milky Way", description: "A stunning view of the Milky Way galaxy stretching across the night sky.", category: "sky", image: "Astro/Sky/beautiful_milky_way.JPG", type: "image", date: "August 2025", equipment: "Canon Rebel T8I" },
