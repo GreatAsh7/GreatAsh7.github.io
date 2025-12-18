@@ -85,7 +85,7 @@ const galleryData = [
     {
         id: 9,
         title: "Strawberry Moon",
-        description: "The Strawberry Moon captured at peak brightness. What a shade of red!",
+        description: "The Strawberry Moon, but why is it actually red?",
         category: "moon",
         image: "Astro/Moon/strawberry.jpeg",
         type: "image",
