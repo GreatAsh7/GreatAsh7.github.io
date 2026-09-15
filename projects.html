@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects | Ashwin Krishnamurthy</title>
+<meta name="description" content="Artemis II flight simulation, a wildfire-detection CubeSat, the STS Sim-to-Sample arm, aerospace CAD studies, grain boundary research, and NGC 2194 photometry.">
+<meta property="og:title" content="Projects | Ashwin Krishnamurthy">
+<meta property="og:description" content="Artemis II flight simulation, a wildfire-detection CubeSat, the STS Sim-to-Sample arm, aerospace CAD studies, grain boundary research, and NGC 2194 photometry.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#07080A">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23FF6B1A'/%3E%3Ctext x='16' y='22' font-family='monospace' font-size='15' font-weight='600' text-anchor='middle' fill='%2307080A'%3EAK%3C/text%3E%3C/svg%3E">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" />
+<style>
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #07080A; color: #E9EAED; font-family: Archivo, Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+  p { text-wrap: pretty; }
+  a { color: #FF6B1A; text-decoration: none; }
+  a:hover { color: #FF8D4D; }
+  ::selection { background: #FF6B1A; color: #07080A; }
+</style>
+</helmet>
+
+<div style="min-height:100vh;background:#07080A;display:flex;flex-direction:column">
+
+  <nav style="position:sticky;top:0;z-index:100;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;min-height:60px;padding:10px clamp(16px,4vw,56px);background:rgba(7,8,10,0.86);backdrop-filter:blur(14px);border-bottom:1px solid rgba(233,234,237,0.10)">
+    <a href="index.html" style="display:flex;align-items:center;gap:11px;text-decoration:none">
+      <span style="width:22px;height:22px;display:grid;place-items:center;background:#FF6B1A;color:#07080A;font:500 10px/1 'JetBrains Mono',monospace">AK</span>
+      <span style="font:500 10.5px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#E9EAED">ASHWIN KRISHNAMURTHY</span>
+    </a>
+    <div style="display:flex;align-items:center;gap:clamp(14px,2.2vw,30px)">
+      <a href="index.html" style="display:flex;align-items:center;gap:7px;font:500 10.5px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#868B94;text-decoration:none" style-hover="color:#E9EAED">
+        <span style="width:4px;height:4px;background:transparent"></span>HOME</a>
+      <a href="projects.html" style="display:flex;align-items:center;gap:7px;font:500 10.5px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#FF6B1A;text-decoration:none">
+        <span style="width:4px;height:4px;background:#FF6B1A"></span>PROJECTS</a>
+      <a href="about.html" style="display:flex;align-items:center;gap:7px;font:500 10.5px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#868B94;text-decoration:none" style-hover="color:#E9EAED">
+        <span style="width:4px;height:4px;background:transparent"></span>ABOUT</a>
+      <a href="contact.html" style="display:flex;align-items:center;gap:7px;font:500 10.5px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#868B94;text-decoration:none" style-hover="color:#E9EAED">
+        <span style="width:4px;height:4px;background:transparent"></span>CONTACT</a>
+      <a href="files/Ashwin-Krishnamurthy-Resume.pdf" download="Ashwin-Krishnamurthy-Resume.pdf" style="font:500 10.5px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#E9EAED;text-decoration:none;border:1px solid rgba(233,234,237,0.22);padding:9px 13px" style-hover="border-color:#FF6B1A;color:#FF6B1A">RESUME ↓</a>
+    </div>
+  </nav>
+
+  <header style="padding:clamp(52px,7vw,104px) clamp(16px,4vw,56px) clamp(40px,5vw,68px)">
+    <div style="max-width:1320px;margin:0 auto">
+      <span style="font:500 10.5px/1 'JetBrains Mono',monospace;letter-spacing:0.2em;color:#FF6B1A">PROJECTS</span>
+      <h1 style="margin:22px 0 0;max-width:22ch;font:700 clamp(34px,5.6vw,80px)/1.02 Archivo,Helvetica,sans-serif;letter-spacing:-0.035em">Things I've built, flown, and published.</h1>
+      <p style="margin:24px 0 0;max-width:58ch;font:400 clamp(14px,1.25vw,17px)/1.62 Archivo,Helvetica,sans-serif;color:#A2A7AF">Simulation, spaceflight hardware, robotics, computational materials, and observational astronomy. Several are still open, and I'll keep adding as they ship.</p>
+    </div>
+  </header>
+
+  <div style="max-width:1320px;margin:0 auto;width:100%;padding:0 clamp(16px,4vw,56px) clamp(60px,8vw,110px)">
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:#07080A;margin-bottom:clamp(48px,6vw,88px)">
+      <a href="#artemis" style="background:#07080A;padding:18px 20px;text-decoration:none;display:flex;flex-direction:column;gap:8px;box-shadow:0 0 0 1px rgba(233,234,237,0.10)" style-hover="background:#0E1115">
+        <span style="font:500 9.5px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#FF6B1A">001</span>
+        <span style="font:500 13px/1.3 Archivo,Helvetica,sans-serif;color:#E9EAED">Artemis II Simulation</span>
+      </a>
+      <a href="#cubesat" style="background:#07080A;padding:18px 20px;text-decoration:none;display:flex;flex-direction:column;gap:8px;box-shadow:0 0 0 1px rgba(233,234,237,0.10)" style-hover="background:#0E1115">
+        <span style="font:500 9.5px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#FF6B1A">002</span>
+        <span style="font:500 13px/1.3 Archivo,Helvetica,sans-serif;color:#E9EAED">Wildfire CubeSat</span>
+      </a>
+      <a href="#sts" style="background:#07080A;padding:18px 20px;text-decoration:none;display:flex;flex-direction:column;gap:8px;box-shadow:0 0 0 1px rgba(233,234,237,0.10)" style-hover="background:#0E1115">
+        <span style="font:500 9.5px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#FF6B1A">003</span>
+        <span style="font:500 13px/1.3 Archivo,Helvetica,sans-serif;color:#E9EAED">STS: Sim-to-Sample</span>
+      </a>
+      <a href="#cad" style="background:#07080A;padding:18px 20px;text-decoration:none;display:flex;flex-direction:column;gap:8px;box-shadow:0 0 0 1px rgba(233,234,237,0.10)" style-hover="background:#0E1115">
+        <span style="font:500 9.5px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#FF6B1A">004</span>
+        <span style="font:500 13px/1.3 Archivo,Helvetica,sans-serif;color:#E9EAED">Aerospace CAD</span>
+      </a>
+      <a href="#grain" style="background:#07080A;padding:18px 20px;text-decoration:none;display:flex;flex-direction:column;gap:8px;box-shadow:0 0 0 1px rgba(233,234,237,0.10)" style-hover="background:#0E1115">
+        <span style="font:500 9.5px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#FF6B1A">005</span>
+        <span style="font:500 13px/1.3 Archivo,Helvetica,sans-serif;color:#E9EAED">Grain Boundaries</span>
+      </a>
+      <a href="#ngc2194" style="background:#07080A;padding:18px 20px;text-decoration:none;display:flex;flex-direction:column;gap:8px;box-shadow:0 0 0 1px rgba(233,234,237,0.10)" style-hover="background:#0E1115">
+        <span style="font:500 9.5px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#FF6B1A">006</span>
+        <span style="font:500 13px/1.3 Archivo,Helvetica,sans-serif;color:#E9EAED">NGC 2194 Photometry</span>
+      </a>
+      <a href="#robotics" style="background:#07080A;padding:18px 20px;text-decoration:none;display:flex;flex-direction:column;gap:8px;box-shadow:0 0 0 1px rgba(233,234,237,0.10)" style-hover="background:#0E1115">
+        <span style="font:500 9.5px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#FF6B1A">007</span>
+        <span style="font:500 13px/1.3 Archivo,Helvetica,sans-serif;color:#E9EAED">FTC Robotics 24536</span>
+      </a>
+      <a href="#ashtronomy" style="background:#07080A;padding:18px 20px;text-decoration:none;display:flex;flex-direction:column;gap:8px;box-shadow:0 0 0 1px rgba(233,234,237,0.10)" style-hover="background:#0E1115">
+        <span style="font:500 9.5px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#FF6B1A">008</span>
+        <span style="font:500 13px/1.3 Archivo,Helvetica,sans-serif;color:#E9EAED">Ashtronomy</span>
+      </a>
+    </div>
+
+    <article id="artemis" data-screen-label="001 Artemis" style="scroll-margin-top:88px;padding-bottom:clamp(60px,8vw,110px);border-bottom:1px solid rgba(233,234,237,0.10);margin-bottom:clamp(60px,8vw,110px)">
+      <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:18px">
+        <span style="font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:0.2em;color:#FF6B1A">001</span>
+        <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#07080A;background:#FF6B1A;padding:6px 9px">NATIONAL WINNER · FEB 2025</span>
+      </div>
+      <h2 data-reveal="1" style="margin:0 0 20px;max-width:24ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">Artemis II Flight Simulation</h2>
+      <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">An Unreal Engine 5 application that simulates the Artemis II mission in real time: trajectory visualization, stage separation tracking, antenna link scheduling, and live motion telemetry. Built with Team Luna Vista for the NASA App Development Challenge, which we won nationally.</p>
+
+      <figure data-reveal="3" style="margin:0 0 clamp(28px,3.4vw,44px)">
+        <div style="position:relative;aspect-ratio:2048/954;max-width:840px;border:1px solid rgba(233,234,237,0.12);background:#000">
+          <img src="images/artemis-sim.png" alt="Artemis II simulation showing the Orion capsule approaching the Moon, with motion telemetry and antenna link panels" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+        </div>
+        <figcaption style="margin-top:12px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Mission status: approaching the Moon. Live telemetry, prioritized antenna link budget, and trajectory overlay.</figcaption>
+      </figure>
+
+      <div data-reveal="3" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(14px,1.8vw,22px);margin-bottom:clamp(28px,3.4vw,44px)">
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:1426/826;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/artemis-cislunar.png" alt="Orion in cislunar space with the service module not firing, velocity and distance readouts, and only one antenna holding a link" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Coasting at 1.23 km/s. WPSA is the only antenna still holding a link.</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:1460/776;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/artemis-earthorbit.png" alt="Orion over Earth on its first loop at 8.27 km/s with a ground track inset and zero antennas in line of sight" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">First Earth loop, 8.27 km/s. Zero antennas in view, the case that actually matters.</figcaption>
+        </figure>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4vw,64px);align-items:start">
+        <div data-reveal="4">
+          <div style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.19em;color:#5A5F68;margin-bottom:20px">CONTRIBUTION</div>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">01</span><span>Owned physics and data across a seven-person team: modeled the mission path and translated real flight parameters into the simulation.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">02</span><span>Built the motion telemetry readouts so position, velocity, and mission phase track the vehicle continuously.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">03</span><span>Modeled the SLS and Orion stack in Onshape for the simulation's vehicle geometry.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">04</span><span>Survived a NASA interview round, then rebuilt lighting, antenna visibility, and UI density on their feedback.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">05</span><span>Won a fully-funded trip to Johnson Space Center: facility tour, a presentation to NASA executives, and a national broadcast segment.</span></div>
+          </div>
+        </div>
+        <div data-reveal="5" style="display:flex;flex-direction:column;gap:18px">
+          <div style="border:1px solid rgba(233,234,237,0.12);background:#0C0E11">
+            <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+              <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">ROLE</span>
+              <span style="font:400 13px/1.4 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Physics &amp; Data</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+              <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">TEAM</span>
+              <span style="font:400 13px/1.4 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Luna Vista, 7 members</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+              <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">TIMELINE</span>
+              <span style="font:400 13px/1.4 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Sept 2024 to 2025</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+              <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">STACK</span>
+              <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Unreal Engine 5, Onshape, Blender</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+              <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">OUTCOME</span>
+              <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#FF6B1A;text-align:right">National winner, NASA ADC 2024-25</span>
+            </div>
+            <div style="padding:20px;display:flex;flex-direction:column;gap:12px">
+              <a href="https://www.youtube.com/watch?v=vhRtD7PJL5M&amp;t=261s" target="_blank" rel="noopener" style="font:500 10.5px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#E9EAED;text-decoration:none;border-bottom:1px solid rgba(233,234,237,0.24);padding-bottom:9px" style-hover="color:#FF6B1A;border-color:#FF6B1A">WATCH THE SIMULATION &#8599;</a>
+              <a href="https://www.youtube.com/watch?v=M0m6bMX80ww&amp;t=245" target="_blank" rel="noopener" style="font:500 10.5px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#E9EAED;text-decoration:none;border-bottom:1px solid rgba(233,234,237,0.24);padding-bottom:9px" style-hover="color:#FF6B1A;border-color:#FF6B1A">WATCH THE HELIX TALK &#8599;</a>
+              <a href="https://www.linkedin.com/posts/helixnj_spaceexploration-simulation-unrealengine-activity-7339252755460501507-qAen/" target="_blank" rel="noopener" style="font:500 10.5px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#E9EAED;text-decoration:none;" style-hover="color:#FF6B1A;border-color:#FF6B1A">HELIX WRITE-UP &#8599;</a>
+            </div>
+          </div>
+          <figure style="margin:0;border:1px solid rgba(233,234,237,0.12);background:#fff">
+            <div style="position:relative;aspect-ratio:900/759">
+              <img src="images/cad-sls.png" alt="Onshape CAD assembly of the Space Launch System with the Orion capsule" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+            </div>
+          </figure>
+          <div style="font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">SLS and Orion stack, modeled in Onshape</div>
+        </div>
+      </div>
+
+      <div data-reveal="6" style="margin-top:clamp(28px,3.4vw,44px);border-left:2px solid #FF6B1A;padding:6px 0 6px 22px;max-width:58ch">
+        <p style="margin:0;font:500 clamp(15px,1.4vw,19px)/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;letter-spacing:-0.01em">Invited to speak at the HELIX Discovery Showcase for the opening of Rutgers' HELIX research building, the youngest speaker among established research pioneers.</p>
+      </div>
+    </article>
+
+    <article id="cubesat" data-screen-label="002 CubeSat" style="scroll-margin-top:88px;padding-bottom:clamp(60px,8vw,110px);border-bottom:1px solid rgba(233,234,237,0.10);margin-bottom:clamp(60px,8vw,110px)">
+      <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:18px">
+        <span style="font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:0.2em;color:#FF6B1A">002</span>
+        <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#07080A;background:#FF6B1A;padding:6px 9px">4TH OF 50+ TEAMS · MIT BWSI</span>
+      </div>
+      <h2 data-reveal="1" style="margin:0 0 20px;max-width:24ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">Wildfire-Detection CubeSat</h2>
+      <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">A 1U CubeSat that images land on a fixed cadence and only stores frames containing a positive wildfire detection, using a classifier trained on NASA GOES data. Built as team Satellites in a Cube for the MIT Beaver Works Build-A-CubeSat Challenge, placing 4th of 50+ teams nationally.</p>
+
+      <div data-reveal="3" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.8vw,22px);max-width:720px;margin-bottom:clamp(28px,3.4vw,44px)">
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:4/5;border:1px solid rgba(233,234,237,0.12);background:#fff">
+            <img src="images/cubesat-cad.png" alt="CubeSat CAD assembly showing the solar panel, standoffs, and Raspberry Pi port cluster" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">1U structure with solar panel and flight computer ports</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:1400/1048;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/cubesat-flight.png" alt="The assembled 1U CubeSat on a bench, aluminium rails and wooden frame, solar panel on one face, Raspberry Pi port cluster and status LEDs visible inside" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The built 1U, powered up: rails, solar panel, Pi port cluster</figcaption>
+        </figure>
+        <figure style="margin:0;grid-column:1 / -1">
+          <div style="position:relative;aspect-ratio:856/400;max-width:720px;border:1px solid rgba(233,234,237,0.12);background:#3B3BC4">
+            <img src="images/cubesat-internals.png" alt="Annotated top view of the CubeSat interior: Raspberry Pi 4, Camera Module 3, IMU and accelerometer, and the USB-A power connection" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Inside the 1U: Pi 4, Camera Module 3, IMU and accelerometer, USB-A power</figcaption>
+        </figure>
+
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4vw,64px);align-items:start">
+        <div data-reveal="4">
+          <div style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.19em;color:#5A5F68;margin-bottom:20px">CONTRIBUTION</div>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">01</span><span>Owned the demonstration plan and mission goals: defined what we had to prove on the bench and how we would measure it.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">02</span><span>Worked the wildfire-detection model trained on NASA GOES data, targeting 90% detection accuracy.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">03</span><span>Contributed to the 1U structure and the internal mounting for the flight computer, camera, and power stack.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">04</span><span>Wrote requirements against real subsystems: structures, ADCS, imaging, power, propulsion, and thermal.</span></div>
+          </div>
+        </div>
+        <div data-reveal="5" style="border:1px solid rgba(233,234,237,0.12);background:#0C0E11">
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">ROLE</span>
+            <span style="font:400 13px/1.4 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Demonstration plan &amp; goals</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">FORM FACTOR</span>
+            <span style="font:400 13px/1.4 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">1U, 10 cm cube, under 1 kg</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">AVIONICS</span>
+            <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Raspberry Pi 4, Camera Module 3, IMU</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">POWER</span>
+            <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Solar panels into lithium-ion backup</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">TARGET ORBIT</span>
+            <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">600 km LEO, 1 year, Δv under 10 m/s</span>
+          </div>
+          <div style="padding:15px 20px">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">WHY IT MATTERS</span>
+            <div style="font:400 13px/1.55 Archivo,Helvetica,sans-serif;color:#E9EAED;margin-top:9px">Gives agencies like FEMA an orbital detection layer above drone-based survey.</div>
+          </div>
+          <div style="padding:20px;display:flex;flex-direction:column;gap:12px;border-top:1px solid rgba(233,234,237,0.10)">
+              <a href="https://youtu.be/UvOV-trjNgU" target="_blank" rel="noopener" style="font:500 10.5px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#E9EAED;text-decoration:none;border-bottom:1px solid rgba(233,234,237,0.24);padding-bottom:9px" style-hover="color:#FF6B1A;border-color:#FF6B1A">CUBESAT VIDEO 01 &#8599;</a>
+              <a href="https://youtu.be/KAC197QtEbI" target="_blank" rel="noopener" style="font:500 10.5px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#E9EAED;text-decoration:none;border-bottom:1px solid rgba(233,234,237,0.24);padding-bottom:9px" style-hover="color:#FF6B1A;border-color:#FF6B1A">CUBESAT VIDEO 02 &#8599;</a>
+              <a href="https://youtu.be/XgJwLrfADNM" target="_blank" rel="noopener" style="font:500 10.5px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#E9EAED;text-decoration:none;" style-hover="color:#FF6B1A;border-color:#FF6B1A">CUBESAT VIDEO 03 &#8599;</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="sts" data-screen-label="003 STS arm" style="scroll-margin-top:88px;padding-bottom:clamp(60px,8vw,110px);border-bottom:1px solid rgba(233,234,237,0.10);margin-bottom:clamp(60px,8vw,110px)">
+      <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:18px">
+        <span style="font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:0.2em;color:#FF6B1A">003</span>
+        <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#07080A;background:#FF6B1A;padding:6px 9px">LAB AUTOMATION</span>
+      </div>
+      <h2 data-reveal="1" style="margin:0 0 20px;max-width:24ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">STS: Sim-to-Sample</h2>
+      <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">A five-axis arm built on the SO-101 platform and programmed to pick up test tubes in a lab. The interesting part of the problem is not the reach, it's the grip: glass tubes are fragile, nearly featureless, and tightly racked, so the arm has to locate and lift one without disturbing its neighbours. Designed in CAD, 3D printed, then wired and tuned on the bench.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4vw,64px);align-items:start">
+        <div data-reveal="3">
+          <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:1058/724;border:1px solid rgba(233,234,237,0.12);background:#fff">
+            <img src="images/sts-cad.png" alt="CAD render of the STS Sim-to-Sample arm with a geared parallel gripper" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Sim-to-Sample, full assembly</figcaption>
+        </figure>
+
+        </div>
+        <div data-reveal="4">
+          <div style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.19em;color:#5A5F68;margin-bottom:20px">CONTRIBUTION</div>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">01</span><span>Programmed the SO-101 arm to locate and lift test tubes reliably in a lab setting.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">02</span><span>Tuned the pick sequence so the grip holds glass without crushing it or knocking adjacent tubes.</span></div>
+          </div>
+          <div style="margin-top:26px;border:1px solid rgba(233,234,237,0.12);background:#0C0E11">
+            <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+              <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">PLATFORM</span>
+              <span style="font:400 13px/1.4 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">SO-101, five axes, 3D printed</span>
+            </div>
+            <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px">
+              <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">APPLICATION</span>
+              <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Repetitive sample handling in labs</span>
+            </div>
+          <div style="padding:16px 20px;border-top:1px solid rgba(233,234,237,0.10)">
+            <a href="https://youtu.be/b8bXUV0VF7k" target="_blank" rel="noopener" style="font:500 10.5px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#E9EAED;text-decoration:none" style-hover="color:#FF6B1A">WATCH THE ARM RUN &#8599;</a>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div data-reveal="5" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.8vw,22px);margin-top:clamp(28px,3.4vw,44px)">
+            <figure style="margin:0">
+            <div style="position:relative;aspect-ratio:3/4;border:1px solid rgba(233,234,237,0.12);background:#000">
+              <img src="images/sts-arm.png" alt="3D-printed robotic arm with servo joints and a gripper" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+            </div>
+            <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The printed arm, joints wired</figcaption>
+          </figure>
+          <figure style="margin:0">
+            <div style="position:relative;aspect-ratio:3/4;border:1px solid rgba(233,234,237,0.12);background:#000">
+              <img src="images/sts-camera.png" alt="Raspberry Pi Camera Module 3 in a printed bezel, the arm's vision sensor" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+            </div>
+            <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Camera Module 3 in a printed bezel, the arm's eye</figcaption>
+          </figure>
+      </div>
+    </article>
+
+    <article id="cad" data-screen-label="004 CAD" style="scroll-margin-top:88px;padding-bottom:clamp(60px,8vw,110px);border-bottom:1px solid rgba(233,234,237,0.10);margin-bottom:clamp(60px,8vw,110px)">
+      <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:18px">
+        <span style="font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:0.2em;color:#FF6B1A">004</span>
+        <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#868B94;border:1px solid rgba(233,234,237,0.18);padding:6px 9px">ONGOING · SELF-DIRECTED</span>
+      </div>
+      <h2 data-reveal="1" style="margin:0 0 20px;max-width:26ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">Aerospace CAD Studies</h2>
+      <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">Surface modeling practice on airframes I wanted to understand from the inside out: Concorde's ogival delta, the 737's wing and nacelle geometry, the B-2's blended flying wing. Each one is a study in a different problem: supersonic area ruling, transonic cruise efficiency, low-observable curvature.</p>
+
+      <div data-reveal="3" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(268px,1fr));gap:clamp(14px,1.8vw,22px);margin-bottom:clamp(28px,3.4vw,44px)">
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:16/9;border:1px solid rgba(233,234,237,0.12);background:#fff">
+            <img src="images/cad-concorde.png" alt="Onshape surface model of Concorde, showing the ogival delta wing" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Concorde, ogival delta</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:16/9;border:1px solid rgba(233,234,237,0.12);background:#fff">
+            <img src="images/cad-737.png" alt="Onshape surface model of a Boeing 737 airliner" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">737, transonic wing and nacelles</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:16/9;border:1px solid rgba(233,234,237,0.12);background:#fff">
+            <img src="images/cad-b2.png" alt="Onshape surface model of the B-2 Spirit flying wing" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">B-2 Spirit, blended flying wing</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:16/9;border:1px solid rgba(233,234,237,0.12);background:#fff">
+            <img src="images/cad-tie.png" alt="Onshape assembly of a TIE fighter with circular patterned panel structure" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">TIE fighter, circular patterning</figcaption>
+        </figure>
+      </div>
+
+      <div data-reveal="4" style="max-width:62ch">
+        <div style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.19em;color:#5A5F68;margin-bottom:18px">WHY</div>
+        <p style="margin:0;font:400 14.5px/1.62 Archivo,Helvetica,sans-serif;color:#A2A7AF">Modeling an aircraft forces you to confront decisions the real designers made. You cannot fake a wing root fillet or a nacelle intersection, so every one of these taught me something about loft continuity, patterning, and where a surface model stops being geometry and starts being engineering. It's also what made me fast enough in Onshape to model the SLS stack for the Artemis simulation.</p>
+      </div>
+    </article>
+
+    <article id="grain" data-screen-label="005 Grain boundaries" style="scroll-margin-top:88px;padding-bottom:clamp(60px,8vw,110px);border-bottom:1px solid rgba(233,234,237,0.10);margin-bottom:clamp(60px,8vw,110px)">
+      <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:18px">
+        <span style="font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:0.2em;color:#FF6B1A">005</span>
+        <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#07080A;background:#FF6B1A;padding:6px 9px">DOE-FUNDED · 3RD AT MCLAREN SYMPOSIUM</span>
+      </div>
+      <h2 data-reveal="1" style="margin:0 0 20px;max-width:26ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">Classifying Minimum-Energy Grain Boundaries</h2>
+      <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">Ongoing research in the microMechanics of Deformation Group at Rutgers Materials Science, with Prof. Ryan Sills. Grain boundaries govern how a metal fails, and the Hall-Petch relationship that predicts strength from grain size breaks down below roughly 30 nanometers. The goal is a framework that classifies boundaries by defect content, so behavior can be predicted from structure.</p>
+
+      <div data-reveal="3" style="max-width:760px;margin-bottom:clamp(20px,2.4vw,30px)">
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:914/536;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/fig-bicrystal.png" alt="Atomistic bicrystal of aluminium: two grain orientations in dark red and pink meeting at a boundary, with defect atoms picked out in yellow and teal" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The bicrystal: two orientations meeting, defect atoms picked out in yellow and teal</figcaption>
+        </figure>
+        
+      </div>
+
+      <div data-reveal="4" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.8vw,22px);margin-bottom:clamp(28px,3.4vw,44px)">
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:514/294;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/fig-lines-oblique.png" alt="Interfacial line defects extracted from the boundary plane, a regular array of parallel teal lines seen at an angle" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The extracted line defects, oblique view</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:432/272;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/fig-lines-face.png" alt="The same line defect array viewed face-on, evenly spaced across the boundary plane" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Face-on: the spacing is what sets the boundary class</figcaption>
+        </figure>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4vw,64px);align-items:start">
+        <div data-reveal="4">
+          <div style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.19em;color:#5A5F68;margin-bottom:20px">WHAT I DID</div>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">01</span><span>Worked a dataset of 7,304 minimum-energy aluminum grain boundaries spanning all five macroscopic degrees of freedom, drawn from over 43 million candidate structures.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">02</span><span>Used Interfacial Line Defect Analysis in OVITO to extract defect content from each boundary and group boundaries into classes.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">03</span><span>Categorized boundaries by energy, misorientation angle, and grain size so machine learning models can predict the response to applied stress.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">04</span><span>Presented at the Rutgers Malcolm G. McLaren Symposium, taking 3rd place and a $300 scholarship.</span></div>
+          </div>
+        </div>
+        <div data-reveal="5" style="border:1px solid rgba(233,234,237,0.12);background:#0C0E11">
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">ROLE</span>
+            <span style="font:400 13px/1.4 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Research Intern</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">LAB</span>
+            <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Rutgers MSE, Sills Group</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">TIMELINE</span>
+            <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Dec 2024 to present<br />in-person Summer 2025</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">DATASET</span>
+            <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#FF6B1A;text-align:right">7,304 boundaries · 5 DoF</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">TOOLS</span>
+            <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Python, OVITO, ILDA</span>
+          </div>
+          <div style="padding:15px 20px">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">FUNDING</span>
+            <div style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;margin-top:9px">U.S. Department of Energy</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="files/grain-boundary-poster.pdf" target="_blank" rel="noopener" data-reveal="6" style="margin-top:clamp(24px,3vw,36px);display:inline-flex;align-items:center;gap:14px;padding:16px 22px;text-decoration:none;box-shadow:0 0 0 1px rgba(233,234,237,0.16)" style-hover="background:#0C0E11;box-shadow:0 0 0 1px #FF6B1A">
+        <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#FF6B1A">PDF</span>
+        <span style="font:500 14px/1.3 Archivo,Helvetica,sans-serif;color:#E9EAED">Read the McLaren Symposium poster</span>
+        <span style="font:400 14px/1 Archivo,Helvetica,sans-serif;color:#7A8089">&#8599;</span>
+      </a>
+
+      <div data-reveal="6" style="margin-top:clamp(28px,3.4vw,44px);border-left:2px solid #FF6B1A;padding:6px 0 6px 22px;max-width:58ch">
+        <p style="margin:0;font:500 clamp(15px,1.4vw,19px)/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;letter-spacing:-0.01em">The motivation is medical: implants and prosthetics fail at grain boundaries, and mean-lifetime statistics hide the anomalies that actually break them.</p>
+      </div>
+    </article>
+
+    <article id="ngc2194" data-screen-label="006 NGC 2194" style="scroll-margin-top:88px;padding-bottom:clamp(60px,8vw,110px);border-bottom:1px solid rgba(233,234,237,0.10);margin-bottom:clamp(60px,8vw,110px)">
+      <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:18px">
+        <span style="font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:0.2em;color:#FF6B1A">006</span>
+        <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#07080A;background:#FF6B1A;padding:6px 9px">NASA SEES · ~5% ACCEPTANCE</span>
+      </div>
+      <h2 data-reveal="1" style="margin:0 0 20px;max-width:26ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">Refining the Age and Distance to NGC 2194</h2>
+      <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">Selected for NASA's SEES research internship, then ran a photometric study of the open cluster NGC 2194. Our catalog of 816 stars expands substantially on the 120 examined in Cuffey's 1942 study. First author on the resulting poster, presented at MIT URTC and at AGU Fall Meeting, the largest earth and space science conference in the world.</p>
+
+      <div data-reveal="3" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(14px,1.8vw,22px);margin-bottom:clamp(28px,3.4vw,44px)">
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:854/848;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/ngc-rings.png" alt="Concentric ring overlay dividing the cluster field for systematic star numbering" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The ring system I built to split the field</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:900/799;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/ngc-aij.png" alt="AstroImageJ photometry session with aperture measurements labeled on cluster stars" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Aperture photometry in AstroImageJ</figcaption>
+        </figure>
+      </div>
+
+      <figure data-reveal="4" style="margin:0 0 clamp(20px,2.4vw,30px)">
+        <div style="position:relative;aspect-ratio:760/430;max-width:840px;border:1px solid rgba(233,234,237,0.12);background:#fff">
+          <img src="images/ngc-hr.png" alt="Colour magnitude diagram of NGC 2194, corrected V against corrected B-V, with the main sequence and giant branch traced" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+        </div>
+        <figcaption style="margin-top:12px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The colour magnitude diagram, 500+ stars plotted. The turnoff where the main sequence bends is what dates the cluster.</figcaption>
+      </figure>
+
+      <figure data-reveal="5" style="margin:0 0 clamp(28px,3.4vw,44px)">
+        <div style="position:relative;aspect-ratio:1199/742;max-width:840px;border:1px solid rgba(233,234,237,0.12);background:#fff">
+          <img src="images/ngc-starclass.png" alt="Bar chart of NGC 2194 star counts by spectral class, peaking at K-type with 272 stars" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+        </div>
+        <figcaption style="margin-top:12px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Spectral class distribution across the catalog: K-type dominates at 272 stars, with only 7 O-type</figcaption>
+      </figure>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4vw,64px);align-items:start">
+        <div data-reveal="5">
+          <div style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.19em;color:#5A5F68;margin-bottom:20px">WHAT I DID</div>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">01</span><span>Built a ring-based star numbering system so a six-person team could catalog the cluster without collisions, inner rings numbered first.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">02</span><span>Performed B and V broadband photometry in AstroImageJ, converting photon counts inside an aperture into apparent magnitudes against known reference stars.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">03</span><span>Built the Hertzsprung-Russell diagram, located the main-sequence turnoff near B- to A-type stars, and read off a maximum age of 400 million years.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">04</span><span>Applied reddening corrections and the distance modulus to derive a refined distance of roughly 1,076 parsecs, about 3,510 light-years.</span></div>
+          </div>
+        </div>
+        <div data-reveal="5" style="border:1px solid rgba(233,234,237,0.12);background:#0C0E11">
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">PROGRAM</span>
+            <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">NASA SEES (STEM Enhancement in Earth Science)</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">TELESCOPE</span>
+            <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">0.6 m SARA, Cerro Tololo, Chile</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">DATA</span>
+            <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">6 frames, B/V/R filters, 3 s and 120 s</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">CATALOG</span>
+            <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#FF6B1A;text-align:right">816 stars, up from 120 in 1942</span>
+          </div>
+          <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">RESULT</span>
+            <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Max age 400 Myr · 1,076 pc</span>
+          </div>
+          <div style="padding:15px 20px">
+            <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">PUBLISHED</span>
+            <div style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#FF6B1A;margin-top:9px">First author, MIT URTC &amp; AGU Fall Meeting</div>
+          </div>
+        </div>
+      </div>
+
+      <a href="files/ngc2194-poster.pdf" target="_blank" rel="noopener" data-reveal="6" style="margin-top:clamp(24px,3vw,36px);display:inline-flex;align-items:center;gap:14px;padding:16px 22px;text-decoration:none;box-shadow:0 0 0 1px rgba(233,234,237,0.16)" style-hover="background:#0C0E11;box-shadow:0 0 0 1px #FF6B1A">
+        <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#FF6B1A">PDF</span>
+        <span style="font:500 14px/1.3 Archivo,Helvetica,sans-serif;color:#E9EAED">Read the full research poster</span>
+        <span style="font:400 14px/1 Archivo,Helvetica,sans-serif;color:#7A8089">&#8599;</span>
+      </a>
+    </article>
+
+    <article id="robotics" data-screen-label="007 Robotics" style="scroll-margin-top:88px;padding-bottom:clamp(60px,8vw,110px);border-bottom:1px solid rgba(233,234,237,0.10);margin-bottom:clamp(60px,8vw,110px)">
+      <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:18px">
+        <span style="font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:0.2em;color:#FF6B1A">007</span>
+        <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#07080A;background:#FF6B1A;padding:6px 9px">1ST INNOVATE AWARD · NJ TOP 20</span>
+      </div>
+      <h2 data-reveal="1" style="margin:0 0 20px;max-width:24ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">FTC Robotics Team 24536</h2>
+      <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">Co-founded the team and led mechanical design: chassis, manipulator arm, and the full sensor package feeding a TensorFlow object-detection pipeline. Earned the team's first Innovate Award and a state qualifier spot in New Jersey's top 20.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4vw,64px);align-items:start">
+        <figure data-reveal="3" style="margin:0">
+          <div style="position:relative;aspect-ratio:1400/691;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/ftc-states.png" alt="The team seated around their robot on the competition field at the New Jersey FTC state championship" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The team and the robot at the New Jersey state championship</figcaption>
+        </figure>
+        <div data-reveal="4">
+          <div style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.19em;color:#5A5F68;margin-bottom:20px">CONTRIBUTION</div>
+          <div style="display:flex;flex-direction:column;gap:16px">
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">01</span><span>Designed and built the chassis and the arm mechanism.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">02</span><span>Specified and installed every sensor on the robot, including the vision system for TensorFlow object detection.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">03</span><span>Co-founded the team as Mechanical Lead, Oct 2023 to present.</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div data-reveal="5" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.8vw,22px);max-width:900px;margin-top:clamp(28px,3.4vw,44px)">
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:672/760;border:1px solid rgba(233,234,237,0.12);background:#EFC352">
+            <img src="images/ftc-annotated.png" alt="Annotated photo of the robot calling out the arm, viper slides, drone launcher, mecanum wheels, camera, claw, and suspension" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The subsystems, called out</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:492/464;border:1px solid rgba(233,234,237,0.12);background:#EFC352">
+            <img src="images/ftc-cad.png" alt="CAD assembly of the robot showing the chassis, linear slides, and mecanum wheel mounts" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The chassis and arm in CAD</figcaption>
+        </figure>
+      </div>
+
+      <figure data-reveal="6" style="margin:clamp(14px,1.8vw,22px) 0 0;max-width:900px">
+        <div style="position:relative;aspect-ratio:714/538;border:1px solid rgba(233,234,237,0.12);background:#000">
+          <img src="images/ftc-pit.png" alt="The team crowded around robot 24536 in the pit, working on it between matches" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+        </div>
+        <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Pit work between matches</figcaption>
+      </figure>
+    </article>
+
+    <article id="ashtronomy" data-screen-label="008 Ashtronomy" style="scroll-margin-top:88px">
+      <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:18px">
+        <span style="font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:0.2em;color:#FF6B1A">008</span>
+        <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#868B94;border:1px solid rgba(233,234,237,0.18);padding:6px 9px">ONGOING · 4+ YEARS</span>
+      </div>
+      <h2 data-reveal="1" style="margin:0 0 20px;max-width:24ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">Ashtronomy</h2>
+      <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">A site documenting four-plus years of astrophotography: around 100 images of deep-sky objects, planets, and sky events, plus the low-budget methods behind each one so anyone can reproduce them. Over 200 hours under the stars, shot on everything from an Orion StarBlast 4.5 to the observatory's 26-inch Newtonian.</p>
+
+      <div data-reveal="3" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:clamp(12px,1.6vw,18px);margin-bottom:clamp(28px,3.4vw,44px)">
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:1;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/astro-m13.png" alt="Globular cluster M13 in Hercules" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:10px;font:500 9.5px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">M13, Hercules Cluster</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:1;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/astro-m8.png" alt="The Lagoon Nebula, M8" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:10px;font:500 9.5px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">M8, Lagoon Nebula</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:1;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/astro-m27.png" alt="The Dumbbell Nebula, M27" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:10px;font:500 9.5px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">M27, Dumbbell Nebula</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:1;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/astro-saturn.png" alt="Saturn with its rings" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:10px;font:500 9.5px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Saturn</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:1;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/astro-m31.png" alt="The Andromeda Galaxy, M31" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:10px;font:500 9.5px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">M31, Andromeda Galaxy</figcaption>
+        </figure>
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:1;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/astro-m101.png" alt="The Pinwheel Galaxy, M101" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:10px;font:500 9.5px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">M101, Pinwheel Galaxy</figcaption>
+        </figure>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:14px">
+        <a href="https://greatash7.github.io/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#FF6B1A;color:#07080A;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:0.16em;padding:15px 22px;text-decoration:none" style-hover="background:#FF8437;color:#07080A">VIEW THE FULL GALLERY ↗</a>
+      </div>
+    </article>
+
+    <div data-reveal="1" style="margin-top:clamp(60px,8vw,110px);display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(18px,2.2vw,26px)">
+      <div style="border:1px solid rgba(233,234,237,0.14);background:#0C0E11;padding:clamp(26px,3.4vw,40px)">
+        <div style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.19em;color:#FF6B1A;margin-bottom:18px">SHELVED</div>
+        <h3 style="margin:0 0 16px;max-width:28ch;font:600 clamp(19px,2vw,27px)/1.16 Archivo,Helvetica,sans-serif;letter-spacing:-0.026em">Custom videography drone</h3>
+        <p style="margin:0 0 22px;max-width:52ch;font:400 14.5px/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">A quadcopter built from the frame up for aerial video. The airframe, motors, and power distribution are assembled, but I stopped short of a finished flight package and it isn't currently active. Included because the build taught me more about power budgeting and vibration than anything else I've made.</p>
+        <figure style="margin:0">
+          <div style="position:relative;aspect-ratio:4/3;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/drone.png" alt="Partially assembled quadcopter drone frame with four motors and exposed wiring" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Assembled airframe, unfinished build</figcaption>
+        </figure>
+      </div>
+      <div style="border:1px solid rgba(233,234,237,0.14);background:#0C0E11;padding:clamp(26px,3.4vw,40px)">
+        <div style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.19em;color:#FF6B1A;margin-bottom:18px">STARTING NOW</div>
+        <h3 style="margin:0 0 16px;max-width:28ch;font:600 clamp(19px,2vw,27px)/1.16 Archivo,Helvetica,sans-serif;letter-spacing:-0.026em">Three teams at Carnegie Mellon</h3>
+        <p style="margin:0 0 24px;max-width:52ch;font:400 14.5px/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">Just joined all three as a new member. No contributions to claim yet, but this is where the next few years of hardware work happens.</p>
+        <div style="display:flex;flex-direction:column;gap:0;border-top:1px solid rgba(233,234,237,0.12)">
+          <div style="padding:16px 0;border-bottom:1px solid rgba(233,234,237,0.10);font:500 15px/1.35 Archivo,Helvetica,sans-serif;color:#E9EAED">Carnegie Mellon Racing</div>
+          <div style="padding:16px 0;border-bottom:1px solid rgba(233,234,237,0.10);font:500 15px/1.35 Archivo,Helvetica,sans-serif;color:#E9EAED">CMU Lunabotics</div>
+          <div style="padding:16px 0;font:500 15px/1.35 Archivo,Helvetica,sans-serif;color:#E9EAED">Roboclub</div>
+        </div>
+        <p style="margin:24px 0 0;font:400 13.5px/1.6 Archivo,Helvetica,sans-serif;color:#868B94">Follow along on <a href="https://www.linkedin.com/in/ashwinkrishk/" target="_blank" rel="noopener">LinkedIn</a>, where I post work as it happens.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer style="padding:clamp(30px,4vw,44px) clamp(16px,4vw,56px);border-top:1px solid rgba(233,234,237,0.10);display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;align-items:center">
+    <span style="font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">ASHWIN KRISHNAMURTHY &nbsp;·&nbsp; 2026</span>
+    <div style="display:flex;flex-wrap:wrap;gap:clamp(14px,2vw,26px)">
+      <a href="https://www.linkedin.com/in/ashwinkrishk/" target="_blank" rel="noopener" style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#868B94;text-decoration:none" style-hover="color:#FF6B1A">LINKEDIN</a>
+      <a href="https://github.com/GreatAsh7" target="_blank" rel="noopener" style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#868B94;text-decoration:none" style-hover="color:#FF6B1A">GITHUB</a>
+      <a href="https://greatash7.github.io/" target="_blank" rel="noopener" style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#868B94;text-decoration:none" style-hover="color:#FF6B1A">ASHTRONOMY</a>
+      <a href="mailto:ashwinkrishk@gmail.com" style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#868B94;text-decoration:none" style-hover="color:#FF6B1A">EMAIL</a>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  componentDidMount() {
+    this.revealEls = Array.from(document.querySelectorAll('[data-reveal]'));
+    this.revealEls.forEach((el) => {
+      if (el.dataset.revealed) return;
+      el.style.opacity = '0';
+      el.style.transform = 'translateY(16px)';
+      el.style.transition = 'opacity .65s cubic-bezier(.2,.7,.3,1), transform .65s cubic-bezier(.2,.7,.3,1)';
+      el.style.transitionDelay = (Number(el.dataset.reveal) || 1) * 60 + 'ms';
+    });
+    this.show = (el) => {
+      if (!el) return;
+      el.dataset.revealed = '1';
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+    };
+    this.sweep = () => {
+      const h = window.innerHeight || 800;
+      this.revealEls.forEach((el) => {
+        const r = el.getBoundingClientRect();
+        if (r.top < h * 0.96 && r.bottom > -120) this.show(el);
+      });
+    };
+    requestAnimationFrame(() => { this.sweep(); requestAnimationFrame(this.sweep); });
+    this.onScroll = () => {
+      if (this.rafId) return;
+      this.rafId = requestAnimationFrame(() => { this.rafId = 0; this.sweep(); });
+    };
+    window.addEventListener('scroll', this.onScroll, { passive: true });
+    window.addEventListener('resize', this.onScroll, { passive: true });
+    this.failsafe = setInterval(() => {
+      this.sweep();
+      if (this.revealEls.every((el) => el.dataset.revealed)) clearInterval(this.failsafe);
+    }, 400);
+    this.hardShow = setTimeout(() => {
+      this.revealEls.forEach(this.show);
+      clearInterval(this.failsafe);
+    }, 5000);
+  }
+  componentWillUnmount() {
+    clearInterval(this.failsafe);
+    clearTimeout(this.hardShow);
+    window.removeEventListener('scroll', this.onScroll);
+    window.removeEventListener('resize', this.onScroll);
+  }
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
