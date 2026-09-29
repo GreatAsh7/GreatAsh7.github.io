@@ -58,7 +58,7 @@
 
   <div style="max-width:1320px;margin:0 auto;width:100%;padding:0 clamp(16px,4vw,56px) clamp(60px,8vw,110px)">
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:1px;background:#07080A;margin-bottom:clamp(48px,6vw,88px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:1px;background:#07080A;margin-bottom:clamp(48px,6vw,88px)">
       <a href="#artemis" style="background:#07080A;padding:18px 20px;text-decoration:none;display:flex;flex-direction:column;gap:8px;box-shadow:0 0 0 1px rgba(233,234,237,0.10)" style-hover="background:#0E1115">
         <span style="font:500 9.5px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#FF6B1A">001</span>
         <span style="font:500 13px/1.3 Archivo,Helvetica,sans-serif;color:#E9EAED">Artemis II Simulation</span>
@@ -101,21 +101,28 @@
       <h2 data-reveal="1" style="margin:0 0 20px;max-width:24ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">Artemis II Flight Simulation</h2>
       <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">An Unreal Engine 5 application that simulates the Artemis II mission in real time: trajectory visualization, stage separation tracking, antenna link scheduling, and live motion telemetry. Built with Team Luna Vista for the NASA App Development Challenge, which we won nationally.</p>
 
-      <figure data-reveal="3" style="margin:0 0 clamp(28px,3.4vw,44px)">
-        <div style="position:relative;aspect-ratio:2048/954;max-width:840px;border:1px solid rgba(233,234,237,0.12);background:#000">
-          <img src="images/artemis-sim.png" alt="Artemis II simulation showing the Orion capsule approaching the Moon, with motion telemetry and antenna link panels" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
-        </div>
-        <figcaption style="margin-top:12px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Mission status: approaching the Moon. Live telemetry, prioritized antenna link budget, and trajectory overlay.</figcaption>
-      </figure>
-
-      <div data-reveal="3" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:clamp(14px,1.8vw,22px);margin-bottom:clamp(28px,3.4vw,44px)">
-        <figure style="margin:0">
+      <div data-reveal="3" style="display:flex;flex-wrap:wrap;align-items:flex-start;gap:clamp(14px,1.8vw,22px);margin:0 0 clamp(14px,1.8vw,22px)">
+        <figure style="margin:0;flex:2.147 1 0;min-width:min(100%,220px)">
+          <div style="position:relative;aspect-ratio:1200/559;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/artemis-sim.png" alt="Artemis II simulation showing the Orion capsule approaching the Moon, with motion telemetry and antenna link panels" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Mission status: approaching the Moon. Live telemetry, prioritized antenna link budget, and trajectory overlay.</figcaption>
+        </figure>
+        <figure style="margin:0;flex:1.186 1 0;min-width:min(100%,220px)">
+          <div style="position:relative;aspect-ratio:900/759;border:1px solid rgba(233,234,237,0.12);background:#fff">
+            <img src="images/cad-sls.png" alt="Onshape CAD assembly of the Space Launch System with the Orion capsule" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">SLS and Orion stack, modeled in Onshape</figcaption>
+        </figure>
+      </div>
+      <div data-reveal="3" style="display:flex;flex-wrap:wrap;align-items:flex-start;gap:clamp(14px,1.8vw,22px);margin:0 0 clamp(28px,3.4vw,44px)">
+        <figure style="margin:0;flex:1.726 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:1426/826;border:1px solid rgba(233,234,237,0.12);background:#000">
             <img src="images/artemis-cislunar.png" alt="Orion in cislunar space with the service module not firing, velocity and distance readouts, and only one antenna holding a link" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Coasting at 1.23 km/s. WPSA is the only antenna still holding a link.</figcaption>
         </figure>
-        <figure style="margin:0">
+        <figure style="margin:0;flex:1.881 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:1460/776;border:1px solid rgba(233,234,237,0.12);background:#000">
             <img src="images/artemis-earthorbit.png" alt="Orion over Earth on its first loop at 8.27 km/s with a ground track inset and zero antennas in line of sight" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
@@ -162,12 +169,6 @@
               <a href="https://www.linkedin.com/posts/helixnj_spaceexploration-simulation-unrealengine-activity-7339252755460501507-qAen/" target="_blank" rel="noopener" style="font:500 10.5px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#E9EAED;text-decoration:none;" style-hover="color:#FF6B1A;border-color:#FF6B1A">HELIX WRITE-UP &#8599;</a>
             </div>
           </div>
-          <figure style="margin:0;border:1px solid rgba(233,234,237,0.12);background:#fff">
-            <div style="position:relative;aspect-ratio:900/759">
-              <img src="images/cad-sls.png" alt="Onshape CAD assembly of the Space Launch System with the Orion capsule" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
-            </div>
-          </figure>
-          <div style="font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">SLS and Orion stack, modeled in Onshape</div>
         </div>
       </div>
 
@@ -184,26 +185,25 @@
       <h2 data-reveal="1" style="margin:0 0 20px;max-width:24ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">Wildfire-Detection CubeSat</h2>
       <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">A 1U CubeSat that images land on a fixed cadence and only stores frames containing a positive wildfire detection, using a vision language model trained on NASA GOES data. Built as team Satellites in a Cube for the MIT Beaver Works Build-A-CubeSat Challenge, placing 4th of 50+ teams nationally.</p>
 
-      <div data-reveal="3" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.8vw,22px);max-width:720px;margin-bottom:clamp(28px,3.4vw,44px)">
-        <figure style="margin:0">
-          <div style="position:relative;aspect-ratio:4/5;border:1px solid rgba(233,234,237,0.12);background:#fff">
-            <img src="images/cubesat-cad.png" alt="CubeSat CAD assembly showing the solar panel, standoffs, and Raspberry Pi port cluster" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+      <div data-reveal="3" style="display:flex;flex-wrap:wrap;align-items:flex-start;gap:clamp(14px,1.8vw,22px);margin:0 0 clamp(28px,3.4vw,44px)">
+        <figure style="margin:0;flex:0.911 1 0;min-width:min(100%,220px)">
+          <div style="position:relative;aspect-ratio:820/900;border:1px solid rgba(233,234,237,0.12);background:#fff">
+            <img src="images/cubesat-cad.png" alt="CubeSat CAD assembly showing the solar panel, standoffs, and Raspberry Pi port cluster" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">1U structure with solar panel and flight computer ports</figcaption>
         </figure>
-        <figure style="margin:0">
+        <figure style="margin:0;flex:1.336 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:1400/1048;border:1px solid rgba(233,234,237,0.12);background:#000">
             <img src="images/cubesat-flight.png" alt="The assembled 1U CubeSat on a bench, aluminium rails and wooden frame, solar panel on one face, Raspberry Pi port cluster and status LEDs visible inside" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The built 1U, powered up: rails, solar panel, Pi port cluster</figcaption>
         </figure>
-        <figure style="margin:0;grid-column:1 / -1">
-          <div style="position:relative;aspect-ratio:856/400;max-width:720px;border:1px solid rgba(233,234,237,0.12);background:#3B3BC4">
-            <img src="images/cubesat-internals.png" alt="Annotated top view of the CubeSat interior: Raspberry Pi 4, Camera Module 3, IMU and accelerometer, and the USB-A power connection" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+        <figure style="margin:0;flex:2.140 1 0;min-width:min(100%,220px)">
+          <div style="position:relative;aspect-ratio:856/400;border:1px solid rgba(233,234,237,0.12);background:#3B3BC4">
+            <img src="images/cubesat-internals.png" alt="Annotated top view of the CubeSat interior: Raspberry Pi 4, Camera Module 3, IMU and accelerometer, and the USB-A power connection" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Inside the 1U: Pi 4, Camera Module 3, IMU and accelerometer, USB-A power</figcaption>
         </figure>
-
       </div>
 
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4vw,64px);align-items:start">
@@ -258,23 +258,37 @@
       <h2 data-reveal="1" style="margin:0 0 20px;max-width:24ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">STS: Sim-to-Sample</h2>
       <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">A five-axis arm built on the SO-101 platform and programmed to pick up test tubes in a lab. The interesting part of the problem is not the reach, it's the grip: glass tubes are fragile, nearly featureless, and tightly racked, so the arm has to locate and lift one without disturbing its neighbours. Designed in CAD, 3D printed, then wired and tuned on the bench.</p>
 
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4vw,64px);align-items:start">
-        <div data-reveal="3">
-          <figure style="margin:0">
+      <div data-reveal="3" style="display:flex;flex-wrap:wrap;align-items:flex-start;gap:clamp(14px,1.8vw,22px);margin:0 0 clamp(28px,3.4vw,44px)">
+        <figure style="margin:0;flex:1.461 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:1058/724;border:1px solid rgba(233,234,237,0.12);background:#fff">
-            <img src="images/sts-cad.png" alt="CAD render of the STS Sim-to-Sample arm with a geared parallel gripper" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+            <img src="images/sts-cad.png" alt="CAD render of the STS Sim-to-Sample arm with a geared parallel gripper" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Sim-to-Sample, full assembly</figcaption>
         </figure>
+        <figure style="margin:0;flex:0.750 1 0;min-width:min(100%,220px)">
+          <div style="position:relative;aspect-ratio:1200/1600;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/sts-arm.png" alt="3D-printed robotic arm with servo joints and a gripper" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The printed arm, joints wired</figcaption>
+        </figure>
+        <figure style="margin:0;flex:0.750 1 0;min-width:min(100%,220px)">
+          <div style="position:relative;aspect-ratio:1200/1600;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/sts-camera.png" alt="Raspberry Pi Camera Module 3 in a printed bezel, the arm's vision sensor" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Camera Module 3 in a printed bezel, the arm's eye</figcaption>
+        </figure>
+      </div>
 
-        </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4vw,64px);align-items:start">
         <div data-reveal="4">
           <div style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.19em;color:#5A5F68;margin-bottom:20px">CONTRIBUTION</div>
           <div style="display:flex;flex-direction:column;gap:16px">
             <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">01</span><span>Programmed the SO-101 arm to locate and lift test tubes reliably in a lab setting.</span></div>
             <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">02</span><span>Tuned the pick sequence so the grip holds glass without crushing it or knocking adjacent tubes.</span></div>
           </div>
-          <div style="margin-top:26px;border:1px solid rgba(233,234,237,0.12);background:#0C0E11">
+          </div>
+        <div data-reveal="5">
+          <div style="border:1px solid rgba(233,234,237,0.12);background:#0C0E11">
             <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
               <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">PLATFORM</span>
               <span style="font:400 13px/1.4 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">SO-101, five axes, 3D printed</span>
@@ -288,20 +302,6 @@
           </div>
           </div>
         </div>
-      </div>
-      <div data-reveal="5" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.8vw,22px);margin-top:clamp(28px,3.4vw,44px)">
-            <figure style="margin:0">
-            <div style="position:relative;aspect-ratio:3/4;border:1px solid rgba(233,234,237,0.12);background:#000">
-              <img src="images/sts-arm.png" alt="3D-printed robotic arm with servo joints and a gripper" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
-            </div>
-            <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The printed arm, joints wired</figcaption>
-          </figure>
-          <figure style="margin:0">
-            <div style="position:relative;aspect-ratio:3/4;border:1px solid rgba(233,234,237,0.12);background:#000">
-              <img src="images/sts-camera.png" alt="Raspberry Pi Camera Module 3 in a printed bezel, the arm's vision sensor" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
-            </div>
-            <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Camera Module 3 in a printed bezel, the arm's eye</figcaption>
-          </figure>
       </div>
     </article>
 
@@ -348,26 +348,22 @@
       <h2 data-reveal="1" style="margin:0 0 20px;max-width:26ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">Classifying Minimum-Energy Grain Boundaries</h2>
       <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">Ongoing research in the microMechanics of Deformation Group at Rutgers Materials Science, with Prof. Ryan Sills. Grain boundaries govern how a metal fails, and the Hall-Petch relationship that predicts strength from grain size breaks down below roughly 30 nanometers. The goal is a framework that classifies boundaries by defect content, so behavior can be predicted from structure.</p>
 
-      <div data-reveal="3" style="max-width:760px;margin-bottom:clamp(20px,2.4vw,30px)">
-        <figure style="margin:0">
+      <div data-reveal="3" style="display:flex;flex-wrap:wrap;align-items:flex-start;gap:clamp(14px,1.8vw,22px);margin:0 0 clamp(28px,3.4vw,44px)">
+        <figure style="margin:0;flex:1.705 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:914/536;border:1px solid rgba(233,234,237,0.12);background:#000">
-            <img src="images/fig-bicrystal.png" alt="Atomistic bicrystal of aluminium: two grain orientations in dark red and pink meeting at a boundary, with CIS interface atoms picked out in yellow and teal" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+            <img src="images/fig-bicrystal.png" alt="Atomistic bicrystal of aluminium: two grain orientations in dark red and pink meeting at a boundary, with CIS interface atoms picked out in yellow and teal" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The bicrystal: two orientations meeting, CIS interface atoms picked out in yellow and teal</figcaption>
         </figure>
-        
-      </div>
-
-      <div data-reveal="4" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.8vw,22px);margin-bottom:clamp(28px,3.4vw,44px)">
-        <figure style="margin:0">
+        <figure style="margin:0;flex:1.748 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:514/294;border:1px solid rgba(233,234,237,0.12);background:#000">
-            <img src="images/fig-lines-oblique.png" alt="Interfacial line defects extracted from the boundary plane, a regular array of parallel teal lines seen at an angle" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+            <img src="images/fig-lines-oblique.png" alt="Interfacial line defects extracted from the boundary plane, a regular array of parallel teal lines seen at an angle" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The extracted line defects, oblique view</figcaption>
         </figure>
-        <figure style="margin:0">
+        <figure style="margin:0;flex:1.588 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:432/272;border:1px solid rgba(233,234,237,0.12);background:#000">
-            <img src="images/fig-lines-face.png" alt="The same line defect array viewed face-on, evenly spaced across the boundary plane" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+            <img src="images/fig-lines-face.png" alt="The same line defect array viewed face-on, evenly spaced across the boundary plane" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Face-on: the spacing is what sets the boundary class</figcaption>
         </figure>
@@ -430,34 +426,34 @@
       <h2 data-reveal="1" style="margin:0 0 20px;max-width:26ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">Refining the Age and Distance to NGC 2194</h2>
       <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">Selected for NASA's SEES research internship, then ran a photometric study of the open cluster NGC 2194. Our catalog of 816 stars expands substantially on the 120 examined in Cuffey's 1942 study. Presenting author on the resulting poster, presented at MIT URTC and at AGU Fall Meeting, the largest earth and space science conference in the world.</p>
 
-      <div data-reveal="3" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(14px,1.8vw,22px);margin-bottom:clamp(28px,3.4vw,44px)">
-        <figure style="margin:0">
+      <div data-reveal="3" style="display:flex;flex-wrap:wrap;align-items:flex-start;gap:clamp(14px,1.8vw,22px);margin:0 0 clamp(14px,1.8vw,22px)">
+        <figure style="margin:0;flex:1.007 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:854/848;border:1px solid rgba(233,234,237,0.12);background:#000">
-            <img src="images/ngc-rings.png" alt="Concentric ring overlay dividing the cluster field for systematic star numbering" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+            <img src="images/ngc-rings.png" alt="Concentric ring overlay dividing the cluster field for systematic star numbering" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The ring system our team built to split the field</figcaption>
         </figure>
-        <figure style="margin:0">
+        <figure style="margin:0;flex:1.767 1 0;min-width:min(100%,220px)">
+          <div style="position:relative;aspect-ratio:760/430;border:1px solid rgba(233,234,237,0.12);background:#fff">
+            <img src="images/ngc-hr.png" alt="Colour magnitude diagram of NGC 2194, corrected V against corrected B-V, with the main sequence and giant branch traced" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The colour magnitude diagram, 816 stars plotted, nearly 700 more than the 120 in Cuffey's 1942 study. The turnoff where the main sequence bends is what dates the cluster.</figcaption>
+        </figure>
+      </div>
+      <div data-reveal="4" style="display:flex;flex-wrap:wrap;align-items:flex-start;gap:clamp(14px,1.8vw,22px);margin:0 0 clamp(28px,3.4vw,44px)">
+        <figure style="margin:0;flex:1.126 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:900/799;border:1px solid rgba(233,234,237,0.12);background:#000">
-            <img src="images/ngc-aij.png" alt="AstroImageJ photometry session with aperture measurements labeled on cluster stars" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+            <img src="images/ngc-aij.png" alt="AstroImageJ photometry session with aperture measurements labeled on cluster stars" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Aperture photometry in AstroImageJ</figcaption>
         </figure>
+        <figure style="margin:0;flex:1.615 1 0;min-width:min(100%,220px)">
+          <div style="position:relative;aspect-ratio:880/545;border:1px solid rgba(233,234,237,0.12);background:#fff">
+            <img src="images/ngc-starclass.png" alt="Bar chart of NGC 2194 star counts by spectral class, peaking at K-type with 272 stars" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Spectral class distribution across the catalog: K-type dominates at 272 stars, with only 7 O-type</figcaption>
+        </figure>
       </div>
-
-      <figure data-reveal="4" style="margin:0 0 clamp(20px,2.4vw,30px)">
-        <div style="position:relative;aspect-ratio:760/430;max-width:840px;border:1px solid rgba(233,234,237,0.12);background:#fff">
-          <img src="images/ngc-hr.png" alt="Colour magnitude diagram of NGC 2194, corrected V against corrected B-V, with the main sequence and giant branch traced" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
-        </div>
-        <figcaption style="margin-top:12px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The colour magnitude diagram, 816 stars plotted, nearly 700 more than the 120 in Cuffey's 1942 study. The turnoff where the main sequence bends is what dates the cluster.</figcaption>
-      </figure>
-
-      <figure data-reveal="5" style="margin:0 0 clamp(28px,3.4vw,44px)">
-        <div style="position:relative;aspect-ratio:1199/742;max-width:840px;border:1px solid rgba(233,234,237,0.12);background:#fff">
-          <img src="images/ngc-starclass.png" alt="Bar chart of NGC 2194 star counts by spectral class, peaking at K-type with 272 stars" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
-        </div>
-        <figcaption style="margin-top:12px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Spectral class distribution across the catalog: K-type dominates at 272 stars, with only 7 O-type</figcaption>
-      </figure>
 
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4vw,64px);align-items:start">
         <div data-reveal="5">
@@ -529,27 +525,27 @@
         </div>
       </div>
 
-      <div data-reveal="5" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(14px,1.8vw,22px);max-width:900px;margin-top:clamp(28px,3.4vw,44px)">
-        <figure style="margin:0">
+      <div data-reveal="5" style="display:flex;flex-wrap:wrap;align-items:flex-start;gap:clamp(14px,1.8vw,22px);margin:clamp(28px,3.4vw,44px) 0 0">
+        <figure style="margin:0;flex:0.884 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:672/760;border:1px solid rgba(233,234,237,0.12);background:#EFC352">
-            <img src="images/ftc-annotated.png" alt="Annotated photo of the robot calling out the arm, viper slides, drone launcher, mecanum wheels, camera, claw, and suspension" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+            <img src="images/ftc-annotated.png" alt="Annotated photo of the robot calling out the arm, viper slides, drone launcher, mecanum wheels, camera, claw, and suspension" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The subsystems, called out</figcaption>
         </figure>
-        <figure style="margin:0">
+        <figure style="margin:0;flex:1.060 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:492/464;border:1px solid rgba(233,234,237,0.12);background:#EFC352">
-            <img src="images/ftc-cad.png" alt="CAD assembly of the robot showing the chassis, linear slides, and mecanum wheel mounts" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block" />
+            <img src="images/ftc-cad.png" alt="CAD assembly of the robot showing the chassis, linear slides, and mecanum wheel mounts" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The chassis and arm in CAD</figcaption>
         </figure>
+        <figure style="margin:0;flex:1.327 1 0;min-width:min(100%,220px)">
+          <div style="position:relative;aspect-ratio:714/538;border:1px solid rgba(233,234,237,0.12);background:#000">
+            <img src="images/ftc-pit.png" alt="The team crowded around robot 24536 in the pit, working on it between matches" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+          </div>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Pit work between matches</figcaption>
+        </figure>
       </div>
 
-      <figure data-reveal="6" style="margin:clamp(14px,1.8vw,22px) 0 0;max-width:900px">
-        <div style="position:relative;aspect-ratio:714/538;border:1px solid rgba(233,234,237,0.12);background:#000">
-          <img src="images/ftc-pit.png" alt="The team crowded around robot 24536 in the pit, working on it between matches" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
-        </div>
-        <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Pit work between matches</figcaption>
-      </figure>
     </article>
 
     <article id="ashtronomy" data-screen-label="008 Ashtronomy" style="scroll-margin-top:88px">
@@ -560,7 +556,7 @@
       <h2 data-reveal="1" style="margin:0 0 20px;max-width:24ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">Ashtronomy</h2>
       <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">A site documenting four-plus years of astrophotography: around 100 images of deep-sky objects, planets, and sky events, plus the low-budget methods behind each one so anyone can reproduce them. Over 200 hours under the stars, shot on everything from an Orion StarBlast 4.5 to the observatory's 26-inch Newtonian.</p>
 
-      <div data-reveal="3" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:clamp(12px,1.6vw,18px);margin-bottom:clamp(28px,3.4vw,44px)">
+      <div data-reveal="3" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(12px,1.6vw,18px);margin-bottom:clamp(28px,3.4vw,44px)">
         <figure style="margin:0">
           <div style="position:relative;aspect-ratio:1;border:1px solid rgba(233,234,237,0.12);background:#000">
             <img src="images/astro-m13.png" alt="Globular cluster M13 in Hercules" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
@@ -600,7 +596,7 @@
       </div>
 
       <div style="display:flex;flex-wrap:wrap;gap:14px">
-        <a href="https://greatash7.github.io/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#FF6B1A;color:#07080A;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:0.16em;padding:15px 22px;text-decoration:none" style-hover="background:#FF8437;color:#07080A">VIEW THE FULL GALLERY ↗</a>
+        <a href="https://greatash7.github.io/ashtronomy/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;background:#FF6B1A;color:#07080A;font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:0.16em;padding:15px 22px;text-decoration:none" style-hover="background:#FF8437;color:#07080A">VIEW THE FULL GALLERY ↗</a>
       </div>
     </article>
 
