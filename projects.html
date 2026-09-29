@@ -256,12 +256,12 @@
         <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#07080A;background:#FF6B1A;padding:6px 9px">LAB AUTOMATION</span>
       </div>
       <h2 data-reveal="1" style="margin:0 0 20px;max-width:24ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">STS: Sim-to-Sample</h2>
-      <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">A five-axis arm built on the SO-101 platform and programmed to pick up test tubes in a lab. The interesting part of the problem is not the reach, it's the grip: glass tubes are fragile, nearly featureless, and tightly racked, so the arm has to locate and lift one without disturbing its neighbours. Designed in CAD, 3D printed, then wired and tuned on the bench.</p>
+      <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">A five-axis arm built on the SO-101 platform that moves vials and test tubes around laboratory spaces based on different characteristics, like color. Instead of using inverse kinematics, we made our own angle and velocity calculator so every tube is picked up in line, parallel to the floor, for a smooth, easy pickup. Designed in CAD, 3D printed, then wired and tuned on the bench.</p>
 
       <div data-reveal="3" style="display:flex;flex-wrap:wrap;align-items:flex-start;gap:clamp(14px,1.8vw,22px);margin:0 0 clamp(28px,3.4vw,44px)">
         <figure style="margin:0;flex:1.461 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:1058/724;border:1px solid rgba(233,234,237,0.12);background:#fff">
-            <img src="images/sts-cad.png" alt="CAD render of the STS Sim-to-Sample arm with a geared parallel gripper" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+            <img src="images/sts-cad.png" alt="CAD render of the STS Sim-to-Sample arm" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Sim-to-Sample, full assembly</figcaption>
         </figure>
@@ -273,9 +273,9 @@
         </figure>
         <figure style="margin:0;flex:0.750 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:1200/1600;border:1px solid rgba(233,234,237,0.12);background:#000">
-            <img src="images/sts-camera.png" alt="Raspberry Pi Camera Module 3 in a printed bezel, the arm's vision sensor" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+            <img src="images/sts-camera.png" alt="Raspberry Pi Camera Module 3 in a printed bezel" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
-          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Camera Module 3 in a printed bezel, the arm's eye</figcaption>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Camera Module 3 in a printed bezel</figcaption>
         </figure>
       </div>
 
@@ -283,8 +283,10 @@
         <div data-reveal="4">
           <div style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.19em;color:#5A5F68;margin-bottom:20px">CONTRIBUTION</div>
           <div style="display:flex;flex-direction:column;gap:16px">
-            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">01</span><span>Programmed the SO-101 arm to locate and lift test tubes reliably in a lab setting.</span></div>
-            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">02</span><span>Tuned the pick sequence so the grip holds glass without crushing it or knocking adjacent tubes.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">01</span><span>Built our own angle and velocity calculator in place of inverse kinematics, keeping the arm parallel to the floor so each tube is picked up in line.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">02</span><span>A camera fixed at one spot always looks at the tubes; we pick points in its view and map them onto real space, so the arm can locate those coordinates from its fixed reference position.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">03</span><span>Calculated the velocity for each individual servo so every link arrives at its position at the set time.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">04</span><span>Implemented an existing vision language model that is strong at color identification into our own code.</span></div>
           </div>
           </div>
         <div data-reveal="5">
@@ -295,7 +297,7 @@
             </div>
             <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px">
               <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">APPLICATION</span>
-              <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Repetitive sample handling in labs</span>
+              <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Moving vials and test tubes by color and other traits</span>
             </div>
           <div style="padding:16px 20px;border-top:1px solid rgba(233,234,237,0.10)">
             <a href="https://youtu.be/b8bXUV0VF7k" target="_blank" rel="noopener" style="font:500 10.5px/1 'JetBrains Mono',monospace;letter-spacing:0.15em;color:#E9EAED;text-decoration:none" style-hover="color:#FF6B1A">WATCH THE ARM RUN &#8599;</a>
@@ -532,8 +534,8 @@
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The subsystems, called out</figcaption>
         </figure>
-        <figure style="margin:0;flex:1.060 1 0;min-width:min(100%,220px)">
-          <div style="position:relative;aspect-ratio:492/464;border:1px solid rgba(233,234,237,0.12);background:#EFC352">
+        <figure style="margin:0;flex:0.964 1 0;min-width:min(100%,220px)">
+          <div style="position:relative;aspect-ratio:452/469;border:1px solid rgba(233,234,237,0.12);background:#fff">
             <img src="images/ftc-cad.png" alt="CAD assembly of the robot showing the chassis, linear slides, and mecanum wheel mounts" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The chassis and arm in CAD</figcaption>
