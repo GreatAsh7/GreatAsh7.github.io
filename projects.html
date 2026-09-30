@@ -106,7 +106,7 @@
           <div style="position:relative;aspect-ratio:1200/559;border:1px solid rgba(233,234,237,0.12);background:#000">
             <img src="images/artemis-sim.png" alt="Artemis II simulation showing the Orion capsule approaching the Moon, with motion telemetry and antenna link panels" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
-          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Mission status: approaching the Moon. Live telemetry, prioritized antenna link budget, and trajectory overlay.</figcaption>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Mission status: approaching the Moon. Live telemetry, prioritized antenna link budget, and antenna lines of sight.</figcaption>
         </figure>
         <figure style="margin:0;flex:1.186 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:900/759;border:1px solid rgba(233,234,237,0.12);background:#fff">
@@ -126,7 +126,7 @@
           <div style="position:relative;aspect-ratio:1460/776;border:1px solid rgba(233,234,237,0.12);background:#000">
             <img src="images/artemis-earthorbit.png" alt="Orion over Earth on its first loop at 8.27 km/s with a ground track inset and zero antennas in line of sight" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
-          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">First Earth loop, 8.27 km/s. Zero antennas in view, the case that actually matters.</figcaption>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">First Earth loop, 8.27 km/s. Zero antennas in view.</figcaption>
         </figure>
       </div>
 
@@ -136,7 +136,7 @@
           <div style="display:flex;flex-direction:column;gap:16px">
             <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">01</span><span>Owned physics and data across a seven-person team: modeled the mission path and translated real flight parameters into the simulation.</span></div>
             <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">02</span><span>Built the motion telemetry readouts so position, velocity, and mission phase track the vehicle continuously.</span></div>
-            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">03</span><span>Modeled the SLS and Orion stack in Onshape for the simulation's vehicle geometry.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">03</span><span>Computed and integrated Earth-Centered, Earth-Fixed coordinates for every actor, and rendered antenna lines of sight.</span></div>
             <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">04</span><span>Survived a NASA interview round, then rebuilt lighting, antenna visibility, and UI density on their feedback.</span></div>
             <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">05</span><span>Won a fully-funded trip to Johnson Space Center: facility tour, a presentation to NASA executives, and a national broadcast segment.</span></div>
           </div>
@@ -180,7 +180,7 @@
     <article id="grain" data-screen-label="002 Grain boundaries" style="scroll-margin-top:88px;padding-bottom:clamp(60px,8vw,110px);border-bottom:1px solid rgba(233,234,237,0.10);margin-bottom:clamp(60px,8vw,110px)">
       <div style="display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:18px">
         <span style="font:500 11px/1 'JetBrains Mono',monospace;letter-spacing:0.2em;color:#FF6B1A">002</span>
-        <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#07080A;background:#FF6B1A;padding:6px 9px">DOE-FUNDED · RUTGERS MSE</span>
+        <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#07080A;background:#FF6B1A;padding:6px 9px">DOE-FUNDED · mMoD LAB</span>
       </div>
       <h2 data-reveal="1" style="margin:0 0 20px;max-width:26ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">Classifying Minimum-Energy Grain Boundaries</h2>
       <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">Ongoing research in the microMechanics of Deformation Group at Rutgers Materials Science, with Prof. Ryan Sills. The goal is a framework that classifies grain boundaries by defect content, so a metal's behavior can be predicted from its structure.</p>
@@ -188,21 +188,21 @@
       <div data-reveal="3" style="display:flex;flex-wrap:wrap;align-items:flex-start;gap:clamp(14px,1.8vw,22px);margin:0 0 clamp(28px,3.4vw,44px)">
         <figure style="margin:0;flex:1.705 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:914/536;border:1px solid rgba(233,234,237,0.12);background:#000">
-            <img src="images/fig-bicrystal.png" alt="Atomistic bicrystal of aluminium: two grain orientations in dark red and pink meeting at a boundary, with CIS interface atoms picked out in yellow and teal" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+            <img src="images/fig-bicrystal.png" alt="Atomistic bicrystal of aluminium: two grain orientations in dark red and pink meeting at a boundary, with interfacial atoms highlighted in yellow" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
-          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The bicrystal: two orientations meeting, CIS interface atoms picked out in yellow and teal</figcaption>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Aluminum bicrystal with interfacial atoms (yellow)</figcaption>
         </figure>
         <figure style="margin:0;flex:1.748 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:514/294;border:1px solid rgba(233,234,237,0.12);background:#000">
-            <img src="images/fig-lines-oblique.png" alt="Interfacial line defects extracted from the boundary plane, a regular array of parallel teal lines seen at an angle" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
+            <img src="images/fig-lines-oblique.png" alt="Interfacial line defects extracted from the boundary plane, seen at an angle" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
-          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The extracted line defects, oblique view</figcaption>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Extracted line defects (isometric view)</figcaption>
         </figure>
         <figure style="margin:0;flex:1.588 1 0;min-width:min(100%,220px)">
           <div style="position:relative;aspect-ratio:432/272;border:1px solid rgba(233,234,237,0.12);background:#000">
             <img src="images/fig-lines-face.png" alt="The same line defect array viewed face-on, evenly spaced across the boundary plane" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
-          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Face-on: the spacing is what sets the boundary class</figcaption>
+          <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">Extracted line defects (top-down view)</figcaption>
         </figure>
       </div>
 
@@ -210,7 +210,7 @@
         <div data-reveal="4">
           <div style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.19em;color:#5A5F68;margin-bottom:20px">WHAT I DID</div>
           <div style="display:flex;flex-direction:column;gap:16px">
-            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">01</span><span>Worked a dataset of 7,304 minimum-energy aluminum grain boundaries spanning all five macroscopic degrees of freedom, drawn from over 43 million candidate structures.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">01</span><span>Worked on a dataset of 7,304 minimum-energy aluminum grain boundaries spanning all five macroscopic degrees of freedom, covering over 43 million possible atomic configurations.</span></div>
             <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">02</span><span>Using Interfacial Line Defect Analysis in OVITO to extract defect content from each boundary, with the goal of grouping boundaries into classes.</span></div>
             <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">03</span><span>Preparing a publication on the relationship between disconnections, grain boundary misorientation, and migration.</span></div>
           </div>
@@ -222,7 +222,7 @@
           </div>
           <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
             <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">LAB</span>
-            <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Rutgers MSE, Sills Group</span>
+            <span style="font:400 13px/1.5 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">mMoD, Rutgers University</span>
           </div>
           <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
             <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">TIMELINE</span>
@@ -357,18 +357,18 @@
 
       <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:clamp(28px,4vw,64px);align-items:start">
         <div data-reveal="4">
-          <div style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.19em;color:#5A5F68;margin-bottom:20px">CONTRIBUTION</div>
+          <div style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.19em;color:#5A5F68;margin-bottom:20px">DESCRIPTION</div>
           <div style="display:flex;flex-direction:column;gap:16px">
-            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">01</span><span>Owned the demonstration plan and mission goals: defined what we had to prove on the bench and how we would measure it.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">01</span><span>Ran link budget and power budget calculations, plus flight analysis including orbital mechanics.</span></div>
             <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">02</span><span>Worked the wildfire-detection model trained on NASA GOES data, targeting 90% detection accuracy.</span></div>
-            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">03</span><span>Contributed to the 1U structure and the internal mounting for the flight computer, camera, and power stack.</span></div>
-            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">04</span><span>Wrote requirements against real subsystems: structures, ADCS, imaging, power, propulsion, and thermal.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">03</span><span>Built the 1U structure and installed the electronics, including the Raspberry Pi 4 and camera.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">04</span><span>Together, the team assembled a full flight plan and report covering structures, ADCS, imaging, power, propulsion, and thermal.</span></div>
           </div>
         </div>
         <div data-reveal="5" style="border:1px solid rgba(233,234,237,0.12);background:#0C0E11">
           <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
             <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">ROLE</span>
-            <span style="font:400 13px/1.4 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Demonstration plan &amp; goals</span>
+            <span style="font:400 13px/1.4 Archivo,Helvetica,sans-serif;color:#E9EAED;text-align:right">Co-Captain</span>
           </div>
           <div style="display:flex;justify-content:space-between;gap:12px;padding:15px 20px;border-bottom:1px solid rgba(233,234,237,0.10)">
             <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.17em;color:#5A5F68">FORM FACTOR</span>
@@ -435,7 +435,7 @@
             <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">01</span><span>Built our own angle and velocity calculator in place of inverse kinematics, keeping the arm parallel to the floor so each tube is picked up in line.</span></div>
             <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">02</span><span>A camera fixed at one spot always looks at the tubes; we pick points in its view and map them onto real space, so the arm can locate those coordinates from its fixed reference position.</span></div>
             <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">03</span><span>Calculated the velocity for each individual servo so every link arrives at its position at the set time.</span></div>
-            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">04</span><span>Implemented an existing vision language model that is strong at color identification into our own code.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">04</span><span>Implemented a vision language model that is strong at color identification into our own code.</span></div>
           </div>
           </div>
         <div data-reveal="5">
@@ -462,7 +462,7 @@
         <span style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.18em;color:#868B94;border:1px solid rgba(233,234,237,0.18);padding:6px 9px">ONGOING · 4+ YEARS</span>
       </div>
       <h2 data-reveal="1" style="margin:0 0 20px;max-width:24ch;font:700 clamp(28px,3.8vw,54px)/1.06 Archivo,Helvetica,sans-serif;letter-spacing:-0.032em">Ashtronomy</h2>
-      <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">A site documenting four-plus years of astrophotography: around 100 images of deep-sky objects, planets, and sky events, plus the low-budget methods behind each one so anyone can reproduce them. Over 200 hours under the stars, shot on everything from an Orion StarBlast 4.5 to the observatory's 26-inch Newtonian.</p>
+      <p data-reveal="2" style="margin:0 0 clamp(28px,3.4vw,44px);max-width:62ch;font:400 clamp(15px,1.3vw,18px)/1.6 Archivo,Helvetica,sans-serif;color:#A2A7AF">A site documenting four-plus years of astrophotography: around 100 images of deep-sky objects, planets, and sky events, all taken with low-budget, accessible gear that anyone can use. Over 200 hours under the stars, shot on everything from an Orion StarBlast 4.5 to the observatory's 26-inch Newtonian.</p>
 
       <div data-reveal="3" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:clamp(12px,1.6vw,18px);margin-bottom:clamp(28px,3.4vw,44px)">
         <figure style="margin:0">
@@ -562,7 +562,7 @@
           <div style="font:500 10px/1 'JetBrains Mono',monospace;letter-spacing:0.19em;color:#5A5F68;margin-bottom:20px">CONTRIBUTION</div>
           <div style="display:flex;flex-direction:column;gap:16px">
             <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">01</span><span>Designed and built the chassis and the arm mechanism.</span></div>
-            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">02</span><span>Specified and installed every sensor on the robot, including the vision system for TensorFlow object detection, and helped train the TensorFlow model.</span></div>
+            <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">02</span><span>Specified and installed every sensor on the robot, including the vision system for TensorFlow object detection, and helped train the TensorFlow model by collecting data and providing samples.</span></div>
             <div style="display:flex;gap:14px;font:400 14.5px/1.58 Archivo,Helvetica,sans-serif;color:#C4C8CE"><span style="color:#FF6B1A;font:500 11px/1.9 'JetBrains Mono',monospace">03</span><span>Co-founded the team as Mechanical Lead, Oct 2023 to Apr 2025.</span></div>
           </div>
         </div>
@@ -575,8 +575,8 @@
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The subsystems, called out</figcaption>
         </figure>
-        <figure style="margin:0;flex:0.953 1 0;min-width:min(100%,220px)">
-          <div style="position:relative;aspect-ratio:424/445;border:1px solid rgba(233,234,237,0.12);background:#fff">
+        <figure style="margin:0;flex:1.385 1 0;min-width:min(100%,220px)">
+          <div style="position:relative;aspect-ratio:1050/758;border:1px solid rgba(233,234,237,0.12);background:#eeeff3">
             <img src="images/ftc-cad.png" alt="CAD assembly of the robot showing the chassis, linear slides, and mecanum wheel mounts" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block" />
           </div>
           <figcaption style="margin-top:11px;font:500 10px/1.6 'JetBrains Mono',monospace;letter-spacing:0.14em;text-transform:uppercase;color:#7A8089">The chassis and arm in CAD</figcaption>
